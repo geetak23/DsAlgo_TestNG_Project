@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="37" passed="35" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-11T08:58:11 CST" name="Suite" finished-at="2024-11-11T08:58:45 CST" duration-ms="33946">
+    <groups>
+    </groups>
+    <test started-at="2024-11-11T08:58:11 CST" name="Test" finished-at="2024-11-11T08:58:45 CST" duration-ms="33946">
+      <class name="pageTestEvents.LandingPageEvents">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:09 CST" name="setUP" finished-at="2024-11-11T08:58:11 CST" duration-ms="2245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method is-config="true" signature="openLandingPage()[pri:0, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:12 CST" name="openLandingPage" finished-at="2024-11-11T08:58:12 CST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLandingPage -->
+        <test-method signature="testHomePageTitle()[pri:1, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:12 CST" name="testHomePageTitle" finished-at="2024-11-11T08:58:12 CST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method signature="getStartedBtn()[pri:2, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:12 CST" name="getStartedBtn" finished-at="2024-11-11T08:58:12 CST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStartedBtn -->
+        <test-method is-config="true" signature="checknav_dsportal()[pri:0, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:12 CST" name="checknav_dsportal" finished-at="2024-11-11T08:58:12 CST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checknav_dsportal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTestEvents.LandingPageEvents@67ef029]" started-at="2024-11-11T08:58:46 CST" name="tearDown" finished-at="2024-11-11T08:58:46 CST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageTestEvents.LandingPageEvents -->
+      <class name="pageTestEvents.SignInPageEvents">
+        <test-method is-config="true" signature="userSignIn()[pri:0, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:43 CST" name="userSignIn" finished-at="2024-11-11T08:58:43 CST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSignIn -->
+        <test-method signature="testPageTitle()[pri:10, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:43 CST" name="testPageTitle" finished-at="2024-11-11T08:58:43 CST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:43 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:43 CST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Numpysdet175]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Username and Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:43 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:44 CST" duration-ms="346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdet175batch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Username and Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:44 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:44 CST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Numpysdet175]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdet175batch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Username and Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:44 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:44 CST" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!!!@@##$$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[!!!@@##$$$$$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Username and Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:44 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:44 CST" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:44 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:44 CST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwer123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInInvalidData(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:44 CST" name="testSignInInvalidData" data-provider="getSignInInvalidData" finished-at="2024-11-11T08:58:45 CST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Numpysdet175]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInInvalidData -->
+        <test-method signature="testSignInData(java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:pageTestEvents.SignInPageEvents@551a20d6]" started-at="2024-11-11T08:58:45 CST" name="testSignInData" data-provider="getSignInValidData" finished-at="2024-11-11T08:58:45 CST" duration-ms="543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You are logged in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInData -->
+      </class> <!-- pageTestEvents.SignInPageEvents -->
+      <class name="pageTestEvents.RegisterPageEvents">
+        <test-method is-config="true" signature="registerWithoutSignIn()[pri:0, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:14 CST" name="registerWithoutSignIn" finished-at="2024-11-11T08:58:14 CST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithoutSignIn -->
+        <test-method signature="testPageTitle()[pri:8, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:14 CST" name="testPageTitle" finished-at="2024-11-11T08:58:14 CST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:15 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:18 CST" duration-ms="3212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter User Name, Password and Confirm Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:18 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:21 CST" duration-ms="3239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill out this field. below User Name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:21 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:25 CST" duration-ms="3556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill out this field.below Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:25 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:28 CST" duration-ms="3276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill out this field.below Confirm Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:28 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:34 CST" duration-ms="5556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Numpysdet176!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password_mismatch:The two password fields didn’t match.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:34 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:38 CST" duration-ms="4446" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123sA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123sa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password length doesnot meet]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password length doesnot meet] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password length doesnot meet] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageTestEvents.RegisterPageEvents.registerUser(RegisterPageEvents.java:42)
+at pageTestEvents.RegisterPageEvents.testUserRegistration(RegisterPageEvents.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method signature="testUserRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:pageTestEvents.RegisterPageEvents@5fe8b721]" started-at="2024-11-11T08:58:38 CST" name="testUserRegistration" data-provider="getRegistrationExcelData" finished-at="2024-11-11T08:58:43 CST" duration-ms="4369" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Scrutinizers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Numpysdet176]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[user already exists]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [user already exists] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [user already exists] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageTestEvents.RegisterPageEvents.registerUser(RegisterPageEvents.java:42)
+at pageTestEvents.RegisterPageEvents.testUserRegistration(RegisterPageEvents.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+      </class> <!-- pageTestEvents.RegisterPageEvents -->
+      <class name="pageTestEvents.DashBoardPageEvents">
+        <test-method is-config="true" signature="dsportalDashBoardWithoutSignIn()[pri:0, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:12 CST" name="dsportalDashBoardWithoutSignIn" finished-at="2024-11-11T08:58:12 CST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dsportalDashBoardWithoutSignIn -->
+        <test-method signature="chkPageTitle()[pri:3, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:12 CST" name="chkPageTitle" finished-at="2024-11-11T08:58:12 CST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkPageTitle -->
+        <test-method signature="validateDsAlgoDropdownItems()[pri:4, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:12 CST" name="validateDsAlgoDropdownItems" finished-at="2024-11-11T08:58:12 CST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDsAlgoDropdownItems -->
+        <test-method signature="validateDsAlgoButtons()[pri:5, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:12 CST" name="validateDsAlgoButtons" finished-at="2024-11-11T08:58:12 CST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDsAlgoButtons -->
+        <test-method signature="validateRegister()[pri:6, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:12 CST" name="validateRegister" finished-at="2024-11-11T08:58:12 CST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegister -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Arrays, index=0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="66" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Linked List, index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Stack, index=2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Queue, index=3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="50" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Tree, index=4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="testDSwithoutSignIn(java.util.Map)[pri:7, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="testDSwithoutSignIn" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:13 CST" duration-ms="50" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Graph, index=5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDSwithoutSignIn -->
+        <test-method signature="validateSignIn()[pri:8, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="validateSignIn" finished-at="2024-11-11T08:58:13 CST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignIn -->
+        <test-method signature="userSignIn()[pri:9, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:13 CST" name="userSignIn" finished-at="2024-11-11T08:58:14 CST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSignIn -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Arrays, index=0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Linked List, index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="56" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Stack, index=2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Queue, index=3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Tree, index=4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+        <test-method signature="testDataStructures(java.util.Map)[pri:10, instance:pageTestEvents.DashBoardPageEvents@560cbf1a]" started-at="2024-11-11T08:58:14 CST" name="testDataStructures" data-provider="dataStructuresProvider" finished-at="2024-11-11T08:58:14 CST" duration-ms="47" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{type=Graph, index=5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataStructures -->
+      </class> <!-- pageTestEvents.DashBoardPageEvents -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
