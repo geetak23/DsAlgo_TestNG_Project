@@ -6,14 +6,29 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pageTestEvents.RegisterPageEvents">
+      <class name="pageTestEvents.GraphPageEvents">
         <methods>
+          <include name="practiceQueT2"/>
           <include name="setUP"/>
           <include name="tearDown"/>
-          <include name="registerWithoutSignIn"/>
-          <include name="testUserRegistration" invocation-numbers="5 6"/>
+          <include name="backtograph"/>
+          <include name="Login"/>
+          <include name="practiceQueT1"/>
+          <include name="Logout"/>
+          <include name="graphPage"/>
         </methods>
-      </class> <!-- pageTestEvents.RegisterPageEvents -->
+      </class> <!-- pageTestEvents.GraphPageEvents -->
+      <class name="pageTestEvents.QueuePageEvents">
+        <methods>
+          <include name="practiceQueTopic1"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="queuePage"/>
+          <include name="Login"/>
+          <include name="backtoQueue"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- pageTestEvents.QueuePageEvents -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
