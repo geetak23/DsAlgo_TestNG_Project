@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>65/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 11 21:52:27 EST 2024</td>
+<td>Started on:</td><td>Thu Nov 14 00:35:51 EST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>78 seconds (78464 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1956 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,330 +76,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 10, Applications of Binary trees</td>
-<td></td>
+<td title='pageTestEvents.GraphPageEvents.practiceQueT1()'><b>practiceQueT1</b><br>Test class: pageTestEvents.GraphPageEvents</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pageTestEvents.GraphPageEvents.practiceQueT1(GraphPageEvents.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1332121385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332121385'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pageTestEvents.GraphPageEvents.practiceQueT1(GraphPageEvents.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 11, Binary Search Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 5, Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 11, Binary Search Trees</td>
-<td></td>
-<td>1</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 3, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 0, Overview of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 2, Types of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 2, Types of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 6, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 10, Applications of Binary trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 5, Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 5, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 10, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 0, Overview of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 6, Types of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 0, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 9, Implementation of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 7, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 0, Overview of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 1, Terminologies</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 12, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 2, Types of Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 6, Types of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 11, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 12, Implementation Of BST</td>
-<td></td>
-<td>1</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 12, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 3, Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 4, Traversals-Illustration</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 2, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 1, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 1, Terminologies</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 1, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 8, Binary Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 6, Types of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 10, Applications of Binary trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 11, printhello</td>
-<td></td>
-<td>1</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 8, Binary Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 3, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 6, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 2, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 5, Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 11, Binary Search Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 5, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 3, Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 1, Terminologies</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 7, Implementation in Python</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 0, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 8, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 4, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 8, Binary Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 12, Implementation Of BST</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 7, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 8, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 4, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 4, Traversals-Illustration</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 9, print'Hello'</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 9, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 4, Traversals-Illustration</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 9, Implementation of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 7, Implementation in Python</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 7, Implementation in Python</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 9, Implementation of Binary Trees</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 10, printhello</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.topicsTree()'><b>topicsTree</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 3, Tree Traversals</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
-<tr>
-<td title='pageTestEvents.TreePageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.TreePageEvents<br>Parameters: 12, Implementation Of BST</td>
-<td></td>
-<td>0</td>
-<td>pageTestEvents.TreePageEvents@44be0077</td></tr>
+<td>pageTestEvents.GraphPageEvents@495ee280</td></tr>
 </table><p>
 </body>
 </html>

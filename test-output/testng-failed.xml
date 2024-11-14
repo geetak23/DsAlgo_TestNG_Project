@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="report.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="pageTestEvents.GraphPageEvents">
         <methods>
-          <include name="practiceQueT2"/>
           <include name="setUP"/>
           <include name="tearDown"/>
           <include name="backtograph"/>
@@ -18,17 +14,6 @@
           <include name="graphPage"/>
         </methods>
       </class> <!-- pageTestEvents.GraphPageEvents -->
-      <class name="pageTestEvents.QueuePageEvents">
-        <methods>
-          <include name="practiceQueTopic1"/>
-          <include name="setUP"/>
-          <include name="tearDown"/>
-          <include name="queuePage"/>
-          <include name="Login"/>
-          <include name="backtoQueue"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- pageTestEvents.QueuePageEvents -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

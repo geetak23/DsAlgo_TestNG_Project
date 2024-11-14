@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pageObjects.QueuePage;
+import utilities.Excel_DataProvider;
 
 public class QueuePageEvents extends BaseTest {
 	WebDriver driver;
@@ -154,7 +155,8 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	//@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void validCodeT1(String validcode,String invalidcode) {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -166,7 +168,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeT1(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -176,7 +178,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void validCodeT2(String validcode,String invalidcode) {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -188,7 +190,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeT2(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -198,7 +200,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void validCodeT3(String validcode,String invalidcode) {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -210,7 +212,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeT3(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -220,7 +222,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void validCodeT4(String validcode,String invalidcode) {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();
@@ -232,7 +234,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeT4(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();

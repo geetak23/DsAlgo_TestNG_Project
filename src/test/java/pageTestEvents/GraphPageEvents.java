@@ -23,6 +23,7 @@ import driver.DriverFactory;
 import io.cucumber.messages.types.Duration;
 import pageObjects.GraphPage;
 import pageObjects.SignInPage;
+import utilities.Excel_DataProvider;
 
 public class GraphPageEvents extends BaseTest {
 
@@ -104,7 +105,8 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualURL,expectedURL );
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+
 	public void validCodeGraph(String validcode,String invalidcode) {
 		graphPage.graphTopic();
 		graphPage.tryHere();
@@ -115,7 +117,8 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="Python Code")
+	//@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void validCodeGraphRep(String validcode,String invalidcode) {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -126,7 +129,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeGraph(String validcode,String invalidcode) throws InterruptedException {
 		graphPage.graphTopic();
 		graphPage.tryHere();
@@ -140,7 +143,8 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.alerAccept();
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="Python Code")
+	//@Test(dataProvider="Python Code")
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
 	public void invalidCodeGraphRep(String validcode,String invalidcode) throws InterruptedException {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -158,9 +162,7 @@ public class GraphPageEvents extends BaseTest {
 	public void practiceQueT1() {
 		graphPage.graphTopic();
 		graphPage.practiceQuestion();
-		String Actual=graphPage.validatePractice();
-		String Expected="Graph";
-		Assert.assertEquals(Actual, Expected);
+		Assert.assertTrue(graphPage.validatePractice());
 		
 		graphPage.backTograph();
 		
@@ -171,9 +173,10 @@ public class GraphPageEvents extends BaseTest {
 	public void practiceQueT2() {
 		graphPage.graphRepresentation();
 		graphPage.practiceQuestion();
-		String Actual=graphPage.validatePractice();
-		String Expected="Graph";
-		Assert.assertEquals(Actual, Expected);
+		Assert.assertTrue(graphPage.validatePractice());
+		//String Actual=graphPage.validatePractice();
+		//String Expected="Graph";
+		//Assert.assertEquals(Actual, Expected);
 		
 		graphPage.backTograph();
 		

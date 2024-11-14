@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 
 import pageObjects.StackPage;
+import utilities.Excel_DataProvider;
 
 public class StackPageEvents  extends BaseTest {
 	WebDriver driver;
@@ -64,9 +65,25 @@ public class StackPageEvents  extends BaseTest {
 		
 		
 	}
-	@Test(dataProvider="validcode Topics")
-	public void validcodeTopics(int topicnumber,String validcode) {
-		stackPage.Topic(topicnumber);
+	@Test(dataProvider="Valid code topic no", dataProviderClass = Excel_DataProvider.class)
+	public void validcodeTopics(String topicnumber,String validcode) {
+		
+		int topicnumber1 = 0; 
+		if (topicnumber.contains("0")){
+			
+			topicnumber1=0;
+		}
+		else 
+			if(topicnumber.contains("1")) {
+				topicnumber1=1;
+			}
+			else
+				if(topicnumber.contains("2")) {
+				topicnumber1=2;
+			}
+		
+		
+		stackPage.Topic(topicnumber1);
 		stackPage.tryHere();
 		stackPage.codeEnter(validcode);
 		stackPage.clickRun();
@@ -75,9 +92,24 @@ public class StackPageEvents  extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		stackPage.driverBack();
 	}
-	@Test(dataProvider="invalidcode Topics")
-	public void invalidTopics(int topicnumber, String invalidcode) {
-		stackPage.Topic(topicnumber);
+	//@Test(dataProvider="invalidcode Topics")
+	@Test(dataProvider="Invalid code topic no", dataProviderClass = Excel_DataProvider.class)
+	public void invalidTopics(String topicnumber,String invalidcode) {
+		int topicnumber1 = 0; 
+		if (topicnumber.contains("0")){
+			
+			topicnumber1=0;
+		}
+		else 
+			if(topicnumber.contains("1")) {
+				topicnumber1=1;
+			}
+			else
+				if(topicnumber.contains("2")) {
+				topicnumber1=2;
+			}
+				
+		stackPage.Topic(topicnumber1);
 		stackPage.tryHere();
 		stackPage.codeEnter(invalidcode);
 		stackPage.clickRun();
@@ -125,9 +157,9 @@ public class StackPageEvents  extends BaseTest {
 	@DataProvider(name="invalidcode Topics")
 	public Object[][] invalidcodeTopics() {
 		return new Object[][] {
-			{0,"printhello"},
-			{1,"printhello"},
-			{2,"printhello"},
+			{"Operations in Stack","printhello"},
+			{"Implementation","printhello"},
+			{"Applications","printhello"},
 			
 			
 			

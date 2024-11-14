@@ -162,10 +162,12 @@ driver.get("https://dsportalapp.herokuapp.com/home");
 	public void practiceQuestion() {
 		driver.findElement(practiceQuestion).click();
 	}
-public String validatePractice() {
+public boolean validatePractice() {
 		
-		
-		return driver.getTitle();
+		boolean value=driver.getPageSource().contains("graphquestions");
+		//return driver.getTitle();
+		System.out.println(value);
+		return value;
 	}
 public void explicitWaitGraph() {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50) );
