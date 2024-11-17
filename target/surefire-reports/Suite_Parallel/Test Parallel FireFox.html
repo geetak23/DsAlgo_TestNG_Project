@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>TestNG:  Test Parallel FireFox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Parallel FireFox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 15 19:39:31 CST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>71 seconds (71767 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, print'Hello'</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, print'Hello'</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPracticeCode()'><b>arrayPracticeCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: {result=not exist, index=0, code=def search(list, value):
+    if value in list:
+        return "Element Found"
+    else:
+        return "Not Found"
+
+print(search([12, 23, 45, 67, 6, 90], 12)), type=Search the array, url=https://dsportalapp.herokuapp.com/question/1, rowNum=2}</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Max Consecutive Ones , def findMaxConsecutiveOnes(nums) :
+count = 0
+result = 0
+for i in range(0, len(nums)):
+if (nums[i] == 0):
+count = 0
+\b
+\b
+else:
+count+= 1
+\b
+\b
+result = max(result, count)
+\b
+\b
+print(result)
+\b
+\b
+findMaxConsecutiveOnes([1,0,1,1,0,1]), 2, https://dsportalapp.herokuapp.com/question/2</td>
+<td></td>
+<td>2</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, print'Hello'</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, printhello</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Find Numbers with Even Number of Digits, def findNumbers(nums):
+c=0
+for i in nums:
+j=str(i)
+x=len(j)
+if x%2==0:
+c=c+1
+\b
+\b
+\b
+\b
+print c
+return c
+findNumbers([12,345,2,6,7896]), 2, https://dsportalapp.herokuapp.com/question/3</td>
+<td></td>
+<td>2</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Squares of a Sorted Array  , , [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, printhello</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Squares of a Sorted Array  , def sortedSquares(nums):
+squares_list = []
+for i in range(0, len(nums)):
+square = nums[i] * nums[i];
+squares_list.append(square)
+\b
+\b
+sorted_squares_list = sorted(squares_list)
+print sorted_squares_list;
+return sorted_squares_list;
+sortedSquares([-7,-3,2,3,11]), [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4</td>
+<td></td>
+<td>2</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, printhello</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Max Consecutive Ones , , 2, https://dsportalapp.herokuapp.com/question/2</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters:  Search the array , , Element Found, https://dsportalapp.herokuapp.com/question/1</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, printhello</td>
+<td></td>
+<td>2</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, print'Hello'</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td></td>
+<td>1</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Find Numbers with Even Number of Digits, , 2, https://dsportalapp.herokuapp.com/question/3</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters:  Search the array , def search(input_list, num):
+if(num in input_list):
+     print("Element Found")
+\b
+\b
+else:
+print("Not Found")
+\b
+\b
+\b
+\b
+search([12, 23, 45, 67, 6, 90] , 12), Element Found, https://dsportalapp.herokuapp.com/question/1</td>
+<td></td>
+<td>2</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@611f8234</td></tr>
+</table><p>
+</body>
+</html>

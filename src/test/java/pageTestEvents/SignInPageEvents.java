@@ -28,7 +28,7 @@ public class SignInPageEvents extends BaseTest{
 	public void testSignInInvalidData(String username, String password, String ExpectedMsg) {	
 		System.out.println("invalid data");
 		signIn.signinpage(username,password);
-		
+
 		if((username.trim()==""&& password.trim()=="")||(password.trim()=="")||username.trim()=="")
 		{
 			Assert.assertEquals("Please fill out this field.", "Please fill out this field.");

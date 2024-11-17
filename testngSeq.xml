@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite_Seq">
+	
+    <listeners>
+		<listener class-name="report.ExtentReportListener" />
+		<listener class-name="utilities.RetryListener" />
+	</listeners>
+		
+  <test  name="Test Parallel Home and Dashboard modules.Browser:Chrome">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+	  <class name="base.BaseTest"/>      
+      <class name="pageTestEvents.LandingPageEvents"/>   
+      <class name="pageTestEvents.DashBoardPageEvents"/>		
+      <class name="pageTestEvents.SignInPageEvents"/>     
+      <class name="pageTestEvents.RegisterPageEvents"/>   
+      <class name="pageTestEvents.ArrayPageEvents"/> 
+      <class name="pageTestEvents.LinkedListPageEvents"/>  
+      <class name="pageTestEvents.StackPageEvents"/>  
+      <class name="pageTestEvents.QueuePageEvents"/>
+      <class name="pageTestEvents.TreePageEvents"/>
+      <class name="pageTestEvents.GraphPageEvents"/>     
+   	</classes>
+  </test>
+  
+</suite> <!-- Suite_Parallel -->

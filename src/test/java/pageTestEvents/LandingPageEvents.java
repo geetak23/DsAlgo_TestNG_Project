@@ -12,7 +12,7 @@ import pageObjects.LandingPage;
 import utilities.TestDataLoader;
 
 public class LandingPageEvents extends BaseTest {
-	
+
 	private boolean chktestHomePageTitle = false;
 	LandingPage landingPage;
 	String pageTitle;

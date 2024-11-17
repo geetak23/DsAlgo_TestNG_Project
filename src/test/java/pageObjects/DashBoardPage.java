@@ -25,6 +25,8 @@ public class DashBoardPage{
 	By dsGetStartBtn=By.xpath("//a[contains(text(),'Get Started')]");
 	By dropdownitemslist=By.xpath("//div[@class='dropdown-menu show']");
 	
+	By signOutbtn=By.xpath("//a[text()='Sign out']");
+	
 	private WebDriver driver;
 
 	public DashBoardPage() {
@@ -108,4 +110,7 @@ public class DashBoardPage{
     public void loginLinkPage(){
     	 System.out.println("User is on SignIn Page with Register link at the bottom of the page");
     }
+    public void signoutBtn() {
+  		driver.findElement(signOutbtn).click();
+  	}
 }

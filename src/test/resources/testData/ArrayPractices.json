@@ -1,0 +1,12 @@
+{
+    "arraysPractice": [
+      {
+        "list-group-item": "Search the array",
+        "index": "0",
+        "url": "https://dsportalapp.herokuapp.com/question/1",
+        "rowNum": "2",
+      "code":"def search(list, value):\n    if value in list:\n        return \"Element Found\"\n    else:\n        return \"Not Found\"\n\nprint(search([12, 23, 45, 67, 6, 90], 12))",
+        "result": "not exist"
+      }
+    ] 
+  }

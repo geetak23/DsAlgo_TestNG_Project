@@ -17,19 +17,19 @@ public class RegisterPageEvents extends BaseTest
 	{			       
 		try {
 			regPage.userName(userName);
-			Thread.sleep(1000);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		try {
 			regPage.passWord(password);
-			Thread.sleep(1000);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		try {
 			regPage.confirmPassword(ConfirmPwd);
-			Thread.sleep(1000);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}        
@@ -50,8 +50,6 @@ public class RegisterPageEvents extends BaseTest
 	@BeforeClass
 	public void registerWithoutSignIn() {
 		System.out.println("@BeforeClass");
-		//DashBoardPage dbPage=new DashBoardPage();
-		//dbPage.openDashBoardPage();
 		regPage = new RegisterPage();
 		regPage.openRegisterPage();
 	}
@@ -69,5 +67,12 @@ public class RegisterPageEvents extends BaseTest
 		
 		registerUser(username,password,confirmPassword,ExpectedMsg);		
 	}
-
+	@Test(priority = 9, dataProvider = "getInvalidRegistrationStaticData", dataProviderClass = DataProvider_Inputs.class)
+	public void testUserRegistrationjson(String username, String password, String confirmPassword, String ExpectedMsg) {	
+		System.out.println("Testing registration with Username: " + username + 
+				", Password: " + password + 
+				", Confirm Password: " + confirmPassword +
+				", ExpectedMsg: "+ ExpectedMsg);
+		registerUser(username,password,confirmPassword,ExpectedMsg);		
+	}
 }

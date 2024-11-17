@@ -1,0 +1,1481 @@
+<html>
+<head>
+<title>TestNG:  Test Parallel FireFox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Parallel FireFox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/29</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 15 13:00:49 CST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5172 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='base.BaseTest.setUP()'><b>setUP</b><br>Test class: base.BaseTest<br>Parameters: firefox</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1970705789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1970705789'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>4</td>
+<td>base.BaseTest@611f8234</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.Logout()'><b>Logout</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.userSignIn()'><b>userSignIn</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='base.BaseTest.tearDown()'><b>tearDown</b><br>Test class: base.BaseTest</td>
+<td></td>
+<td>0</td>
+<td>base.BaseTest@611f8234</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.backtoArray()'><b>backtoArray</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPage()'><b>arrayPage</b><br>Test class: pageTestEvents.ArrayPageEvents</td>
+<td></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, print'Hello'</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace958353049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace958353049'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1751229094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1751229094'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769009593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769009593'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.arrayPracticeCode()'><b>arrayPracticeCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: {result=not exist, index=0, code=def search(list, value):
+    if value in list:
+        return "Element Found"
+    else:
+        return "Not Found"
+
+print(search([12, 23, 45, 67, 6, 90], 12)), type=Search the array, url=https://dsportalapp.herokuapp.com/question/1, rowNum=2}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1347919260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1347919260'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Max Consecutive Ones , def findMaxConsecutiveOnes(nums) :
+count = 0
+result = 0
+for i in range(0, len(nums)):
+if (nums[i] == 0):
+count = 0
+\b
+\b
+else:
+count+= 1
+\b
+\b
+result = max(result, count)
+\b
+\b
+print(result)
+\b
+\b
+findMaxConsecutiveOnes([1,0,1,1,0,1]), 2, https://dsportalapp.herokuapp.com/question/2</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318540208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318540208'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Squares of a Sorted Array  , def sortedSquares(nums):
+squares_list = []
+for i in range(0, len(nums)):
+square = nums[i] * nums[i];
+squares_list.append(square)
+\b
+\b
+sorted_squares_list = sorted(squares_list)
+print sorted_squares_list;
+return sorted_squares_list;
+sortedSquares([-7,-3,2,3,11]), [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace326771446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace326771446'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, printhello</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188642196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188642196'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters:  Search the array , , Element Found, https://dsportalapp.herokuapp.com/question/1</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1323810857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1323810857'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538686027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538686027'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Find Numbers with Even Number of Digits, def findNumbers(nums):
+c=0
+for i in nums:
+j=str(i)
+x=len(j)
+if x%2==0:
+c=c+1
+\b
+\b
+\b
+\b
+print c
+return c
+findNumbers([12,345,2,6,7896]), 2, https://dsportalapp.herokuapp.com/question/3</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730883264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730883264'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, printhello</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1734898674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1734898674'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322642062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322642062'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, print'Hello'</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace286021648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace286021648'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace375721848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace375721848'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1469554697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469554697'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, print'Hello'</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace72461390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace72461390'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Squares of a Sorted Array  , , [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace960937700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace960937700'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, printhello</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1662956984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1662956984'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.validcodeTopics()'><b>validcodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, print'Hello'</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace61960216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61960216'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1940860447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1940860447'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters:  Search the array , def search(input_list, num):
+if(num in input_list):
+     print("Element Found")
+\b
+\b
+else:
+print("Not Found")
+\b
+\b
+\b
+\b
+search([12, 23, 45, 67, 6, 90] , 12), Element Found, https://dsportalapp.herokuapp.com/question/1</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208151192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208151192'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Max Consecutive Ones , , 2, https://dsportalapp.herokuapp.com/question/2</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850160094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850160094'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 2, Basic Operations in Lists</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831778650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831778650'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.practiceArrayDS_ExcelPythonCode()'><b>practiceArrayDS_ExcelPythonCode</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: Find Numbers with Even Number of Digits, , 2, https://dsportalapp.herokuapp.com/question/3</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696820119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696820119'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 1, Arrays Using List</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace491744058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace491744058'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.tryHereTopics()'><b>tryHereTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, Applications of Array</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609881519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609881519'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.invalidTopics()'><b>invalidTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 3, printhello</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756203860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756203860'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.topicsArray()'><b>topicsArray</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356505286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356505286'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+<tr>
+<td title='pageTestEvents.ArrayPageEvents.nocodeTopics()'><b>nocodeTopics</b><br>Test class: pageTestEvents.ArrayPageEvents<br>Parameters: 0, Arrays in Python</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1196523439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1196523439'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>pageTestEvents.ArrayPageEvents@7bb3a9fe</td></tr>
+</table><p>
+</body>
+</html>

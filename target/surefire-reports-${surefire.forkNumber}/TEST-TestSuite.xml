@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.22" tests="147" errors="0" skipped="144" failures="3">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project\target\test-classes;C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project\target\classes;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-java\4.24.0\selenium-java-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-api\4.24.0\selenium-api-4.24.0.jar;C:\Users\geeta\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.24.0\selenium-chrome-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.24.0\selenium-chromium-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-json\4.24.0\selenium-json-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.24.0\selenium-manager-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.24.0\selenium-devtools-v126-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.24.0\selenium-devtools-v127-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.24.0\selenium-devtools-v128-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.24.0\selenium-devtools-v85-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.24.0\selenium-edge-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.24.0\selenium-firefox-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-http\4.24.0\selenium-http-4.24.0.jar;C:\Users\geeta\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.24.0\selenium-ie-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.24.0\selenium-remote-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\geeta\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\geeta\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\geeta\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\geeta\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\geeta\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\geeta\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-api\1.41.0\opentelemetry-api-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-context\1.41.0\opentelemetry-context-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.41.0\opentelemetry-exporter-logging-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.41.0\opentelemetry-sdk-common-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.41.0\opentelemetry-sdk-extension-autoconfigure-spi-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.41.0\opentelemetry-sdk-extension-autoconfigure-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.41.0-alpha\opentelemetry-api-incubator-1.41.0-alpha.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.41.0\opentelemetry-sdk-trace-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.41.0\opentelemetry-sdk-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.41.0\opentelemetry-sdk-metrics-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.41.0\opentelemetry-sdk-logs-1.41.0.jar;C:\Users\geeta\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-os\4.24.0\selenium-os-4.24.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.24.0\selenium-safari-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-support\4.24.0\selenium-support-4.24.0.jar;C:\Users\geeta\.m2\repository\org\testng\testng\7.10.0\testng-7.10.0.jar;C:\Users\geeta\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\geeta\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\geeta\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\geeta\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.0\webdrivermanager-5.5.0.jar;C:\Users\geeta\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\geeta\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\geeta\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\geeta\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\geeta\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\geeta\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\geeta\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\geeta\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\geeta\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\geeta\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\geeta\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.29.0\allure-cucumber7-jvm-2.29.0.jar;C:\Users\geeta\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\geeta\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\geeta\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\geeta\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\geeta\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\geeta\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\geeta\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\geeta\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\geeta\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\geeta\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\geeta\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\geeta\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\geeta\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\geeta\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\geeta\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\geeta\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\geeta\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\geeta\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\geeta\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\geeta\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\geeta\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\geeta\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\geeta\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\geeta\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\geeta\AppData\Local\Temp\surefire11768900256661534018\surefirebooter-20241115130048260_3.jar C:\Users\geeta\AppData\Local\Temp\surefire11768900256661534018 2024-11-15T13-00-47_903-jvmRun1 surefire-20241115130048260_1tmp surefire_0-20241115130048260_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project\target\test-classes;C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project\target\classes;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-java\4.24.0\selenium-java-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-api\4.24.0\selenium-api-4.24.0.jar;C:\Users\geeta\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.24.0\selenium-chrome-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.24.0\selenium-chromium-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-json\4.24.0\selenium-json-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.24.0\selenium-manager-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.24.0\selenium-devtools-v126-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.24.0\selenium-devtools-v127-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.24.0\selenium-devtools-v128-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.24.0\selenium-devtools-v85-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.24.0\selenium-edge-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.24.0\selenium-firefox-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-http\4.24.0\selenium-http-4.24.0.jar;C:\Users\geeta\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.24.0\selenium-ie-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.24.0\selenium-remote-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\geeta\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\geeta\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\geeta\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\geeta\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\geeta\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\geeta\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-api\1.41.0\opentelemetry-api-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-context\1.41.0\opentelemetry-context-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.41.0\opentelemetry-exporter-logging-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.41.0\opentelemetry-sdk-common-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.41.0\opentelemetry-sdk-extension-autoconfigure-spi-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.41.0\opentelemetry-sdk-extension-autoconfigure-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.41.0-alpha\opentelemetry-api-incubator-1.41.0-alpha.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.41.0\opentelemetry-sdk-trace-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.41.0\opentelemetry-sdk-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.41.0\opentelemetry-sdk-metrics-1.41.0.jar;C:\Users\geeta\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.41.0\opentelemetry-sdk-logs-1.41.0.jar;C:\Users\geeta\.m2\repository\net\bytebuddy\byte-buddy\1.15.0\byte-buddy-1.15.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-os\4.24.0\selenium-os-4.24.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.24.0\selenium-safari-driver-4.24.0.jar;C:\Users\geeta\.m2\repository\org\seleniumhq\selenium\selenium-support\4.24.0\selenium-support-4.24.0.jar;C:\Users\geeta\.m2\repository\org\testng\testng\7.10.0\testng-7.10.0.jar;C:\Users\geeta\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\geeta\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\geeta\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\geeta\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.0\webdrivermanager-5.5.0.jar;C:\Users\geeta\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\geeta\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\geeta\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\geeta\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\geeta\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\geeta\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\geeta\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\geeta\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\geeta\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\geeta\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\geeta\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\geeta\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\geeta\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\geeta\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\geeta\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\geeta\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\geeta\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.29.0\allure-cucumber7-jvm-2.29.0.jar;C:\Users\geeta\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\geeta\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\geeta\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\geeta\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\geeta\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\geeta\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\geeta\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\geeta\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\geeta\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\geeta\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\geeta\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\geeta\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\geeta\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\geeta\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\geeta\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\geeta\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\geeta\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\geeta\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\geeta\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\geeta\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\geeta\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\geeta\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\geeta\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\geeta\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\geeta\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\geeta\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\geeta\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\geeta\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\geeta"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\geeta\AppData\Local\Temp\surefire11768900256661534018\surefirebooter-20241115130048260_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="geeta"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\geeta\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\geeta\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="C:\Users\geeta\eclipse-workspace-2023\TestNG\Dsalgo_TestNG_Project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-19/bin/server;C:/Program Files/Java/jdk-19/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\apache-maven-3.9.0-bin\apache-maven-3.9.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-21;C:\Users\geeta\Downloads\allure-2.30.0\bin;C:\Program Files\Git\cmd;C:\Users\geeta\AppData\Local\Microsoft\WindowsApps;C:\Users\geeta\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\geeta\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\system32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="setUP[chrome](0)" classname="base.BaseTest" time="2.87">
+    <failure message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utilities.TestDataLoader.prop" is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+]]></failure>
+    <system-out><![CDATA[In broswerchrome
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 15, 2024 1:00:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 128; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="tearDown" classname="base.BaseTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="base.BaseTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="base.BaseTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUP[edge](0)" classname="base.BaseTest" time="1.217">
+    <failure message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utilities.TestDataLoader.prop" is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+]]></failure>
+    <system-out><![CDATA[In brosweredge
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Nov 15, 2024 1:00:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 128; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="setUP[firefox](0)" classname="base.BaseTest" time="0.375">
+    <failure message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "utilities.TestDataLoader.prop" is null
+	at utilities.TestDataLoader.getPropertyValue(TestDataLoader.java:61)
+	at utilities.TestDataLoader.getAppUrl(TestDataLoader.java:67)
+	at base.BaseTest.setUP(BaseTest.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+]]></failure>
+    <system-out><![CDATA[In broswerfirefox
+]]></system-out>
+  </testcase>
+  <testcase name="openLandingPage" classname="pageTestEvents.LandingPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testHomePageTitle" classname="pageTestEvents.LandingPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.539 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="getStartedBtn" classname="pageTestEvents.LandingPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.558 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="checknav_dsportal" classname="pageTestEvents.LandingPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="dsportalDashBoardWithoutSignIn" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="chkPageTitle" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.579 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validateDsAlgoDropdownItems" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.585 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validateDsAlgoButtons" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.592 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validateRegister" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.598 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Arrays, index=0}](1)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[In dataStructuresProvider
+before dataStructuresProvider
+[INFO ] 2024-11-15 13:00:51.639 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Linked List, index=1}](2)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.644 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Stack, index=2}](3)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.649 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Queue, index=3}](4)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.654 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Tree, index=4}](5)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.663 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDSwithoutSignIn[{type=Graph, index=5}](6)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.669 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validateSignIn" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.675 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="userSignIn" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.680 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Arrays, index=0}](1)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[In dataStructuresProvider
+before dataStructuresProvider
+[INFO ] 2024-11-15 13:00:51.686 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Linked List, index=1}](2)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.692 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Stack, index=2}](3)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.700 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Queue, index=3}](4)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.707 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Tree, index=4}](5)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.712 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testDataStructures[{type=Graph, index=5}](6)" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:51.718 [TestNG-tests-1] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="Logout" classname="pageTestEvents.DashBoardPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="registerWithoutSignIn" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPageTitle" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:52.940 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[, , , Please enter User Name, Password and Confirm Password](1)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.679 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[, Numpysdet176, Numpysdet176, Please fill out this field. below User Name](2)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.687 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[Scrutinizers, , , Please fill out this field.below Password](3)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.693 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[Scrutinizers, Numpysdet176, , Please fill out this field.below Confirm Password](4)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.698 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[Scrutinizers, Numpysdet176, Numpysdet176!, password_mismatch:The two password fields didn’t match.](5)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.703 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[Scrutinizers, 123sA, 123sa, password length doesnot meet](6)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.708 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistration[Scrutinizers, Numpysdet176, Numpysdet176, user already exists](7)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.714 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[, , , Please enter User Name, Password and Confirm Password](1)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.723 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[, Numpysdet176, Numpysdet176, Please fill out this field. below User Name](2)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.728 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, , , Please fill out this field.below Password](3)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.733 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, Numpysdet176, , Please fill out this field.below Confirm Password](4)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.745 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, Numpysdet176, Numpysdet176!, password_mismatch:The two password fields didn’t match.](5)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.750 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, 123456789, 123456789, password cannot be only numeric](6)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.755 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, 123sA, 123sa, password length doesnot meet](7)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.760 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[Scrutinizers, 123sA, 123sa, password length is less than 8](8)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.768 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testUserRegistrationjson[123123412, 123sA, 123sa, user name cannot be only numeric](9)" classname="pageTestEvents.RegisterPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.775 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="userSignIn" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPageTitle" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.782 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[Numpysdet175, user, Invalid Username and Password](1)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.885 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[username, sdet175batch, Invalid Username and Password](2)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.890 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[Numpysdet175, sdet175batch, Invalid Username and Password](3)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.894 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[!!!@@##$$, !!!@@##$$$$$, Invalid Username and Password](4)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.904 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[, , Please fill out this field.](5)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.910 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[, qwer123, Please fill out this field.](6)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.915 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInInvalidData[Numpysdet175, , Please fill out this field.](7)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:53.920 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="testSignInData[Scrutinizers, Numpysdet176, You are logged in](1)" classname="pageTestEvents.SignInPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.008 [TestNG-tests-2] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="userSignIn" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+    <system-out><![CDATA[In arrayPracticeCode
+before arrayPracticeCode
+]]></system-out>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="arrayPage" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="invalidTopics[0, printhello](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.389 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="backtoArray" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="invalidTopics[1, printhello](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.396 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="invalidTopics[2, printhello](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.403 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="invalidTopics[3, printhello](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.408 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="nocodeTopics[0, Arrays in Python](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.415 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="nocodeTopics[1, Arrays Using List](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.420 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="nocodeTopics[2, Basic Operations in Lists](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.425 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="nocodeTopics[3, Applications of Array](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.429 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="topicsArray[0, Arrays in Python](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.434 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="topicsArray[1, Arrays Using List](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.439 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="topicsArray[2, Basic Operations in Lists](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.443 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="topicsArray[3, Applications of Array](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.452 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="tryHereTopics[0, Arrays in Python](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.459 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="tryHereTopics[1, Arrays Using List](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.465 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="tryHereTopics[2, Basic Operations in Lists](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.471 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="tryHereTopics[3, Applications of Array](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.476 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validcodeTopics[0, print&apos;Hello&apos;](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.481 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validcodeTopics[1, print&apos;Hello&apos;](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.487 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validcodeTopics[2, print&apos;Hello&apos;](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.492 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="validcodeTopics[3, print&apos;Hello&apos;](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.497 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="arrayPracticeCode[{result=not exist, index=0, code=def search(list, value):&#10;    if value in list:&#10;        return &quot;Element Found&quot;&#10;    else:&#10;        return &quot;Not Found&quot;&#10;&#10;print(search([12, 23, 45, 67, 6, 90], 12)), type=Search the array, url=https://dsportalapp.herokuapp.com/question/1, rowNum=2}](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.506 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[ Search the array , def search(input_list, num):&#10;if(num in input_list):&#10;     print(&quot;Element Found&quot;)&#10;\b&#10;\b&#10;else:&#10;print(&quot;Not Found&quot;)&#10;\b&#10;\b&#10;\b&#10;\b&#10;search([12, 23, 45, 67, 6, 90] , 12), Element Found, https://dsportalapp.herokuapp.com/question/1](1)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.565 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[ Search the array , , Element Found, https://dsportalapp.herokuapp.com/question/1](2)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.571 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Max Consecutive Ones , def findMaxConsecutiveOnes(nums) :&#10;count = 0&#10;result = 0&#10;for i in range(0, len(nums)):&#10;if (nums[i] == 0):&#10;count = 0&#10;\b&#10;\b&#10;else:&#10;count+= 1&#10;\b&#10;\b&#10;result = max(result, count)&#10;\b&#10;\b&#10;print(result)&#10;\b&#10;\b&#10;findMaxConsecutiveOnes([1,0,1,1,0,1]), 2, https://dsportalapp.herokuapp.com/question/2](3)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.579 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Max Consecutive Ones , , 2, https://dsportalapp.herokuapp.com/question/2](4)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.587 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Find Numbers with Even Number of Digits, def findNumbers(nums):&#10;c=0&#10;for i in nums:&#10;j=str(i)&#10;x=len(j)&#10;if x%2==0:&#10;c=c+1&#10;\b&#10;\b&#10;\b&#10;\b&#10;print c&#10;return c&#10;findNumbers([12,345,2,6,7896]), 2, https://dsportalapp.herokuapp.com/question/3](5)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.595 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Find Numbers with Even Number of Digits, , 2, https://dsportalapp.herokuapp.com/question/3](6)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.601 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Squares of a Sorted Array  , def sortedSquares(nums):&#10;squares_list = []&#10;for i in range(0, len(nums)):&#10;square = nums[i] * nums[i];&#10;squares_list.append(square)&#10;\b&#10;\b&#10;sorted_squares_list = sorted(squares_list)&#10;print sorted_squares_list;&#10;return sorted_squares_list;&#10;sortedSquares([-7,-3,2,3,11]), [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4](7)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.607 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="practiceArrayDS_ExcelPythonCode[Squares of a Sorted Array  , , [4, 9, 9, 49, 121],  https://dsportalapp.herokuapp.com/question/4](8)" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped message="Cannot invoke &quot;java.util.Properties.getProperty(String)&quot; because &quot;utilities.TestDataLoader.prop&quot; is null"/>
+    <system-out><![CDATA[[INFO ] 2024-11-15 13:00:54.614 [TestNG-tests-3] ExtentReportListener - test is added in pool.
+]]></system-out>
+  </testcase>
+  <testcase name="Logout" classname="pageTestEvents.ArrayPageEvents" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -11,7 +11,7 @@ public abstract class Constants {
 	public static final String CONFIG_FILE_PATH = CURRENT_DIR + "/src/test/resources/execution/config.properties";
 
 	
-	public static String EXECUTION_ENV;
+	public static String EXECUTION_ENV = "test";
 	
 	
 	public static final String TEST_ENV_DATA_FILE = CURRENT_DIR+"/src/test/resources/testData/test_data.properties";

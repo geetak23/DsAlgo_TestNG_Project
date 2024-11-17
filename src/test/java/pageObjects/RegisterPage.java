@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import base.BasePage;
 import driver.DriverFactory;
 import report.ExtentFactory;
 import utilities.LoggerLoad;
@@ -37,14 +36,17 @@ public class RegisterPage
     }
     public void userName(String UN) 
     {
+    	driver.findElement(usernameTxtBox).clear();
  	   driver.findElement(usernameTxtBox).sendKeys(UN);
     }
     public void passWord(String PWD) 
     {
+    	driver.findElement(pwdTxtBox).clear();
  	   driver.findElement(pwdTxtBox).sendKeys(PWD);
     }
     public void confirmPassword(String CPWD)
     {
+    	driver.findElement(pwdTxtBox2).clear();
  	   driver.findElement(pwdTxtBox2).sendKeys(CPWD);
     }
     public String validationMsg()

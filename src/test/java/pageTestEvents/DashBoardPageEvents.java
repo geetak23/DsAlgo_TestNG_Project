@@ -30,7 +30,7 @@ public class DashBoardPageEvents extends BaseTest {
 	}
 
 	@Test(priority = 3)
-	public void chkPageTitle()
+	public void chkPageTitle()	
 	{
 		System.out.println("@Test3");
 		String stringExpected = "NumpyNinja";
@@ -49,19 +49,19 @@ public class DashBoardPageEvents extends BaseTest {
 		int totBtns= dsDBPage.getStartBtnList();		
 		Assert.assertEquals(totBtns, 7);
 	}
-	@Test(priority = 6) 
+	@Test(priority = 6)
 	public void validateRegister() {	
 		System.out.println("validateRegister");
 		dsDBPage.clickRegisterLink();
 	}
-	
+
 	@Test(priority =7, dataProvider = "dataStructuresProvider", dataProviderClass = DataProvider_Inputs.class)
 	public void testDSwithoutSignIn(Map<String, String> data) {
 		System.out.println("Type: " + data.get("type") + ", Index: " + data.get("index"));		
 		dsDBPage.clickDropdownitem(Integer.parseInt(data.get("index")));	
-		
+
 	}
-	
+
 	@Test(priority = 8)
 	public void validateSignIn() {	
 		System.out.println("validateSignIn");
@@ -82,5 +82,10 @@ public class DashBoardPageEvents extends BaseTest {
 	public void testDataStructures(Map<String, String> data) {
 		System.out.println("Type: " + data.get("type") + ", Index: " + data.get("index"));		
 		dsDBPage.clickDropdownitem(Integer.parseInt(data.get("index")));		
+	}
+	@AfterClass
+	public void Logout() {
+		dsDBPage.signoutBtn();
+		System.out.println("User loggedout");
 	}
 }

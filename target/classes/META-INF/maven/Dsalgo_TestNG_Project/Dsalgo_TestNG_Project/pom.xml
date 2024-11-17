@@ -26,7 +26,7 @@
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.5.0</version>
-</dependency>
+</dependency> 
 
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
@@ -113,7 +113,19 @@
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
-			<version>3.0.0-M9</version>					 
+			<version>3.0.0-M9</version>				
+			<configuration>
+				<suiteXmlFiles>
+					<suiteXmlFile>testngParallel.xml</suiteXmlFile>
+				</suiteXmlFiles>
+				<properties>
+					<propety>								
+						<value>5</value>
+							<parallel>classes</parallel>
+                    		<threadCount>5</threadCount>
+					</propety>
+				</properties>                
+	        </configuration> 	 
 		</plugin>
 	</plugins>
 </build>
