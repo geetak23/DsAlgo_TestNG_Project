@@ -117,7 +117,15 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.driverBack();
 	}
 	
-	
+	@Test
+	public void practiceQue() {
+		stackPage.topic1();
+		stackPage.practiceQuestion();
+		Assert.assertTrue(stackPage.validatePractice());
+		stackPage.backToStack();
+		
+		
+	}
 	
 	@AfterMethod()
 	public void backtostack(){

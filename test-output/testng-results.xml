@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T00:35:51 EST" name="Default suite" finished-at="2024-11-14T00:35:53 EST" duration-ms="1956">
+  <suite started-at="2024-11-17T01:28:26 EST" name="Default suite" finished-at="2024-11-17T01:28:29 EST" duration-ms="2306">
     <groups>
     </groups>
-    <test started-at="2024-11-14T00:35:51 EST" name="Default test" finished-at="2024-11-14T00:35:53 EST" duration-ms="1956">
-      <class name="pageTestEvents.GraphPageEvents">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:49 EST" name="setUP" finished-at="2024-11-14T00:35:51 EST" duration-ms="1769" status="PASS">
+    <test started-at="2024-11-17T01:28:26 EST" name="Default test" finished-at="2024-11-17T01:28:29 EST" duration-ms="2306">
+      <class name="pageTestEvents.TreePageEvents">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:24 EST" name="setUP" finished-at="2024-11-17T01:28:26 EST" duration-ms="2053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:51 EST" name="Login" finished-at="2024-11-14T00:35:52 EST" duration-ms="829" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:26 EST" name="Login" finished-at="2024-11-17T01:28:27 EST" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="graphPage()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:52 EST" name="graphPage" finished-at="2024-11-14T00:35:52 EST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="treePage()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:27 EST" name="treePage" finished-at="2024-11-17T01:28:28 EST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- graphPage -->
-        <test-method signature="practiceQueT1()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:52 EST" name="practiceQueT1" finished-at="2024-11-14T00:35:52 EST" duration-ms="344" status="FAIL">
+        </test-method> <!-- treePage -->
+        <test-method signature="practiceQue()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:28 EST" name="practiceQue" finished-at="2024-11-17T01:28:28 EST" duration-ms="446" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at pageTestEvents.GraphPageEvents.practiceQueT1(GraphPageEvents.java:165)
+at pageTestEvents.TreePageEvents.practiceQue(TreePageEvents.java:91)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -62,20 +62,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- practiceQueT1 -->
-        <test-method is-config="true" signature="backtograph()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:52 EST" name="backtograph" finished-at="2024-11-14T00:35:53 EST" duration-ms="212" status="PASS">
+        </test-method> <!-- practiceQue -->
+        <test-method is-config="true" signature="backtostack()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:28 EST" name="backtostack" finished-at="2024-11-17T01:28:28 EST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- backtograph -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:53 EST" name="Logout" finished-at="2024-11-14T00:35:53 EST" duration-ms="244" status="PASS">
+        </test-method> <!-- backtostack -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:28 EST" name="Logout" finished-at="2024-11-17T01:28:29 EST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTestEvents.GraphPageEvents@495ee280]" started-at="2024-11-14T00:35:53 EST" name="tearDown" finished-at="2024-11-14T00:35:53 EST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTestEvents.TreePageEvents@51a9ad5e]" started-at="2024-11-17T01:28:29 EST" name="tearDown" finished-at="2024-11-17T01:28:29 EST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pageTestEvents.GraphPageEvents -->
+      </class> <!-- pageTestEvents.TreePageEvents -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

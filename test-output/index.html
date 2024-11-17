@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\lgcnsa\AppData\Local\Temp\testng-eclipse--166368539\testng-customsuite.xml</span>
+                    <span>C:\Users\lgcnsa\AppData\Local\Temp\testng-eclipse--472911108\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="pageTestEvents.GraphPageEvents" class="method navigator-link" hash-for-method="practiceQueT1">practiceQueT1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="pageTestEvents.TreePageEvents" class="method navigator-link" hash-for-method="practiceQue">practiceQue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,20 +121,20 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">pageTestEvents.GraphPageEvents</span>
+              <span class="class-name">pageTestEvents.TreePageEvents</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="practiceQueT1">
-                  </a> <!-- practiceQueT1 -->
-                  <span class="method-name">practiceQueT1</span>
+                  <a name="practiceQue">
+                  </a> <!-- practiceQue -->
+                  <span class="method-name">practiceQue</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at pageTestEvents.GraphPageEvents.practiceQueT1(GraphPageEvents.java:165)
+	at pageTestEvents.TreePageEvents.practiceQue(TreePageEvents.java:91)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -170,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\lgcnsa\AppData\Local\Temp\testng-eclipse--166368539\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\lgcnsa\AppData\Local\Temp\testng-eclipse--472911108\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,11 +179,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pageTestEvents.GraphPageEvents&quot;&gt;
+      &lt;class name=&quot;pageTestEvents.TreePageEvents&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;practiceQueT1&quot;/&gt;
+          &lt;include name=&quot;practiceQue&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- pageTestEvents.GraphPageEvents --&gt;
+      &lt;/class&gt; &lt;!-- pageTestEvents.TreePageEvents --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -225,14 +225,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'practiceQueT1')
-data.setCell(0, 2, 'pageTestEvents.GraphPageEvents')
-data.setCell(0, 3, 344);
+data.setCell(0, 1, 'practiceQue')
+data.setCell(0, 2, 'pageTestEvents.TreePageEvents')
+data.setCell(0, 3, 446);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 344 ms</span>
+              <span class="suite-total-time">Total running time: 446 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -247,69 +247,21 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">29 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">pageTestEvents.GraphPageEvents</span>
+              <span class="ignored-class-name">pageTestEvents.TreePageEvents</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">validCodeGraph</span>
+                <span class="ignored-method-name">topicsTree</span>
                 <br/>
-                <span class="ignored-method-name">graphDdropDownT2</span>
+                <span class="ignored-method-name">tryHereTopics</span>
                 <br/>
-                <span class="ignored-method-name">stackPage</span>
+                <span class="ignored-method-name">invalidTopics</span>
                 <br/>
-                <span class="ignored-method-name">nocodeGraph</span>
+                <span class="ignored-method-name">validcodeTopics</span>
                 <br/>
-                <span class="ignored-method-name">invalidCodeGraphRep</span>
-                <br/>
-                <span class="ignored-method-name">stackPageT1</span>
-                <br/>
-                <span class="ignored-method-name">graphTopic</span>
-                <br/>
-                <span class="ignored-method-name">practiceQueT2</span>
-                <br/>
-                <span class="ignored-method-name">queuePageT2</span>
-                <br/>
-                <span class="ignored-method-name">treePageT2</span>
-                <br/>
-                <span class="ignored-method-name">arrayPageT2</span>
-                <br/>
-                <span class="ignored-method-name">arrayPage</span>
-                <br/>
-                <span class="ignored-method-name">nocodeGraphRepresentation</span>
-                <br/>
-                <span class="ignored-method-name">queuePage</span>
-                <br/>
-                <span class="ignored-method-name">linkedListPageT1</span>
-                <br/>
-                <span class="ignored-method-name">graphDdropDownT1</span>
-                <br/>
-                <span class="ignored-method-name">stackPageT2</span>
-                <br/>
-                <span class="ignored-method-name">graphDdropDown</span>
-                <br/>
-                <span class="ignored-method-name">validCodeGraphRep</span>
-                <br/>
-                <span class="ignored-method-name">linkedListPage</span>
-                <br/>
-                <span class="ignored-method-name">arrayPageT1</span>
-                <br/>
-                <span class="ignored-method-name">queuePageT1</span>
-                <br/>
-                <span class="ignored-method-name">treePageT1</span>
-                <br/>
-                <span class="ignored-method-name">treePage</span>
-                <br/>
-                <span class="ignored-method-name">tryHereGraphRepresentation</span>
-                <br/>
-                <span class="ignored-method-name">invalidCodeGraph</span>
-                <br/>
-                <span class="ignored-method-name">graphRepresentationTopic</span>
-                <br/>
-                <span class="ignored-method-name">linkedListPageT2</span>
-                <br/>
-                <span class="ignored-method-name">tryHereGraph</span>
+                <span class="ignored-method-name">nocodeTopics</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -321,36 +273,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pageTestEvents.GraphPageEvents</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageTestEvents.TreePageEvents</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUP</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">Login</span>
-                <span class="method-start">1789 ms</span>
+                <span class="method-start">2078 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">graphPage</span>
-                <span class="method-start">2628 ms</span>
+                <span class="method-name">treePage</span>
+                <span class="method-start">3088 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">practiceQueT1</span>
-                <span class="method-start">2916 ms</span>
+                <span class="method-name">practiceQue</span>
+                <span class="method-start">3415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">backtograph</span>
-                <span class="method-start">3270 ms</span>
+                <span class="method-name">backtostack</span>
+                <span class="method-start">3873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">3483 ms</span>
+                <span class="method-start">4087 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3752 ms</span>
+                <span class="method-start">4394 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -84,7 +84,15 @@ public class TreePageEvents extends BaseTest{
 		treePage.driverBack();
 	}
 	
-	
+	@Test
+	public void practiceQue() {
+		treePage.topic1();
+		treePage.practiceQuestion();
+		Assert.assertTrue(treePage.validatePractice());
+		treePage.backToTree();
+		
+		
+	}
 	
 	@AfterMethod()
 	public void backtostack(){

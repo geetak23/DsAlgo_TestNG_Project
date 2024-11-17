@@ -97,6 +97,9 @@ public void codeEnter(String Code) {
 		driver.findElement(codeBox).sendKeys(Code);
 
 	}
+public void topic1() {
+	driver.findElement(Topic1).click();
+}
 	public void clearCode() {
 		driver.findElement(codeBox).clear();
 	}
@@ -144,5 +147,12 @@ public void codeEnter(String Code) {
 	}
 	public void practiceQuestion() {
 		driver.findElement(practiceQuestion).click();
+	}
+public boolean validatePractice() {
+		
+		boolean value=driver.getPageSource().contains("graphquestions");
+		//return driver.getTitle();
+		System.out.println(value);
+		return value;
 	}
 }

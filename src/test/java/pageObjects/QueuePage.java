@@ -155,10 +155,12 @@ public void codeEnter(String Code) {
 	public void signOut() {
 		driver.findElement(signOutBtn).click();
 	}
-	public String validatePractice() {
+public boolean validatePractice() {
 		
-		
-		return driver.getTitle();
+		boolean value=driver.getPageSource().contains("graphquestions");
+		//return driver.getTitle();
+		System.out.println(value);
+		return value;
 	}
 	public void explicitWait() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50) );

@@ -143,7 +143,17 @@ public class LinkedListPageEvents extends BaseTest {
 		
 		
 	}
-	
+	@Test
+	public void practiceQue() {
+		linkedlistPage.topic1();
+		linkedlistPage.practiceQuestion();
+		Assert.assertTrue(linkedlistPage.validatePractice());
+		
+		linkedlistPage.backToLinkedList();
+		
+		
+		
+	}
 	
 	
 	@AfterMethod()

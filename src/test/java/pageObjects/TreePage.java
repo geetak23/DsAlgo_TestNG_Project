@@ -106,6 +106,9 @@ public class TreePage {
 		driver.findElement(dropDownTree).click();
 
 	}
+	public void topic1() {
+		driver.findElement(Topic1).click();
+	}
 	public void tryHere() {
 		driver.findElement(tryHere).click();
 	}
@@ -137,6 +140,13 @@ public void codeEnter(String Code) {
 	}
 	public void practiceQuestion() {
 		driver.findElement(practiceQuestion).click();
+	}
+public boolean validatePractice() {
+		
+		boolean value=driver.getPageSource().contains("graphquestions");
+		//return driver.getTitle();
+		System.out.println(value);
+		return value;
 	}
 	    
 }

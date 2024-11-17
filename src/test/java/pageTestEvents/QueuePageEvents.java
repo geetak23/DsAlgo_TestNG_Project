@@ -105,9 +105,7 @@ public class QueuePageEvents extends BaseTest {
 	public void practiceQueTopic1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.practiceQuestion();
-		String Actual=queuePage.validatePractice();
-		String Expected="Queue";
-		Assert.assertEquals(Actual, Expected);
+		Assert.assertTrue(queuePage.validatePractice());
 		queuePage.backToQueue();
 		
 		

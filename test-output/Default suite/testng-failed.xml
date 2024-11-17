@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageTestEvents.GraphPageEvents">
+      <class name="pageTestEvents.TreePageEvents">
         <methods>
           <include name="setUP"/>
+          <include name="practiceQue"/>
           <include name="tearDown"/>
-          <include name="backtograph"/>
+          <include name="treePage"/>
+          <include name="backtostack"/>
           <include name="Login"/>
-          <include name="practiceQueT1"/>
           <include name="Logout"/>
-          <include name="graphPage"/>
         </methods>
-      </class> <!-- pageTestEvents.GraphPageEvents -->
+      </class> <!-- pageTestEvents.TreePageEvents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
