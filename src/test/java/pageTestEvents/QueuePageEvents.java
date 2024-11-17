@@ -106,7 +106,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.practiceQuestion();
 		Assert.assertTrue(queuePage.validatePractice());
-		queuePage.backToQueue();
+		queuePage.driverBack();
 		
 		
 	}

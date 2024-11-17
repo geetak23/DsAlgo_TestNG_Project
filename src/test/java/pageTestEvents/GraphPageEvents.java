@@ -1,10 +1,6 @@
 package pageTestEvents;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -12,17 +8,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.Select;
-
-import com.beust.jcommander.Parameters;
-
 import base.BaseTest;
 
 
-import driver.DriverFactory;
-import io.cucumber.messages.types.Duration;
 import pageObjects.GraphPage;
-import pageObjects.SignInPage;
 import utilities.Excel_DataProvider;
 
 public class GraphPageEvents extends BaseTest {
@@ -164,7 +153,7 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.practiceQuestion();
 		Assert.assertTrue(graphPage.validatePractice());
 		
-		graphPage.backTograph();
+		graphPage.driverBack();
 		
 		
 		
@@ -178,7 +167,7 @@ public class GraphPageEvents extends BaseTest {
 		//String Expected="Graph";
 		//Assert.assertEquals(Actual, Expected);
 		
-		graphPage.backTograph();
+		graphPage.driverBack();
 		
 		
 		

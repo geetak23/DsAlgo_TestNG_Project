@@ -149,7 +149,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.practiceQuestion();
 		Assert.assertTrue(linkedlistPage.validatePractice());
 		
-		linkedlistPage.backToLinkedList();
+		linkedlistPage.driverBack();
 		
 		
 		

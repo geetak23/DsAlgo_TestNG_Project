@@ -89,7 +89,7 @@ public class TreePageEvents extends BaseTest{
 		treePage.topic1();
 		treePage.practiceQuestion();
 		Assert.assertTrue(treePage.validatePractice());
-		treePage.backToTree();
+		treePage.driverBack();
 		
 		
 	}

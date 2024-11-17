@@ -122,7 +122,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.topic1();
 		stackPage.practiceQuestion();
 		Assert.assertTrue(stackPage.validatePractice());
-		stackPage.backToStack();
+		stackPage.driverBack();
 		
 		
 	}
