@@ -116,7 +116,7 @@
 			<version>3.0.0-M9</version>				 
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>testngParallel.xml</suiteXmlFile>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
 				</suiteXmlFiles>
 				<properties>
 					<propety>								
