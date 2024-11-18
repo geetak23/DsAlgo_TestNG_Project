@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageTestEvents.TreePageEvents">
+      <class name="pageTestEvents.RegisterPageEvents">
         <methods>
           <include name="setUP"/>
-          <include name="practiceQue"/>
           <include name="tearDown"/>
-          <include name="treePage"/>
-          <include name="backtostack"/>
-          <include name="Login"/>
-          <include name="Logout"/>
+          <include name="testUserRegistrationjson" invocation-numbers="5 6"/>
+          <include name="registerWithoutSignIn"/>
+          <include name="testUserRegistration" invocation-numbers="5 6"/>
         </methods>
-      </class> <!-- pageTestEvents.TreePageEvents -->
+      </class> <!-- pageTestEvents.RegisterPageEvents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

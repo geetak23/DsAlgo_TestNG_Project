@@ -6,18 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pageTestEvents.GraphPageEvents">
-        <methods>
-          <include name="practiceQueT2"/>
-          <include name="setUP"/>
-          <include name="tearDown"/>
-          <include name="backtograph"/>
-          <include name="Login"/>
-          <include name="practiceQueT1"/>
-          <include name="Logout"/>
-          <include name="graphPage"/>
-        </methods>
-      </class> <!-- pageTestEvents.GraphPageEvents -->
       <class name="pageTestEvents.QueuePageEvents">
         <methods>
           <include name="practiceQueTopic1"/>
@@ -29,6 +17,59 @@
           <include name="Logout"/>
         </methods>
       </class> <!-- pageTestEvents.QueuePageEvents -->
+      <class name="pageTestEvents.StackPageEvents">
+        <methods>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="Logout"/>
+          <include name="practiceQue"/>
+          <include name="stackPage"/>
+          <include name="Login"/>
+          <include name="backtostack"/>
+        </methods>
+      </class> <!-- pageTestEvents.StackPageEvents -->
+      <class name="pageTestEvents.RegisterPageEvents">
+        <methods>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="registerWithoutSignIn"/>
+          <include name="testUserRegistration" invocation-numbers="5 6"/>
+        </methods>
+      </class> <!-- pageTestEvents.RegisterPageEvents -->
+      <class name="pageTestEvents.TreePageEvents">
+        <methods>
+          <include name="setUP"/>
+          <include name="practiceQue"/>
+          <include name="tearDown"/>
+          <include name="treePage"/>
+          <include name="backtostack"/>
+          <include name="Login"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- pageTestEvents.TreePageEvents -->
+      <class name="pageTestEvents.GraphPageEvents">
+        <methods>
+          <include name="setUP"/>
+          <include name="practiceQueT2"/>
+          <include name="tearDown"/>
+          <include name="backtograph"/>
+          <include name="Login"/>
+          <include name="practiceQueT1"/>
+          <include name="Logout"/>
+          <include name="graphPage"/>
+        </methods>
+      </class> <!-- pageTestEvents.GraphPageEvents -->
+      <class name="pageTestEvents.LinkedListPageEvents">
+        <methods>
+          <include name="backtoQueue"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="Logout"/>
+          <include name="practiceQue"/>
+          <include name="Login"/>
+          <include name="linkedListPage"/>
+        </methods>
+      </class> <!-- pageTestEvents.LinkedListPageEvents -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

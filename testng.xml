@@ -8,12 +8,17 @@
 
 	<test thread-count="5" name="Test">
 		<classes>
+		<class name="pageTestEvents.LandingPageEvents" />
+		<class name="pageTestEvents.RegisterPageEvents" />
+		<class name="pageTestEvents.DashBoardPageEvents" />
+		<class name="pageTestEvents.SignInPageEvents" />
+		<class name="pageTestEvents.ArrayPageEvents" />
 			<class name="pageTestEvents.GraphPageEvents" />
 			<class name="pageTestEvents.LinkedListPageEvents" />
 			<class name="pageTestEvents.QueuePageEvents" />		
-			<class name="pageTestEvents.SignOutPageEvents" />
 			<class name="pageTestEvents.StackPageEvents" />
 			<class name="pageTestEvents.TreePageEvents" />
+			<class name="pageTestEvents.SignOutPageEvents" />
 					
 		</classes>
 	</test> 
