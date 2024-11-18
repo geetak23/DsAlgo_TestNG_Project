@@ -108,7 +108,7 @@ public class ArrayPageEvents extends BaseTest{
 			arrpage.driverBack();
 	}
 
-	/*	@Test(priority =10, dataProvider = "arrayPracticeCode", dataProviderClass = DataProvider_Inputs.class)
+@Test(priority =10, dataProvider = "arrayPracticeCode", dataProviderClass = DataProvider_Inputs.class)
 	public void arrayPracticeCode(Map<String, String> data) throws InterruptedException {		
 		arrpage.Topic(1);
 		arrpage.practiceArrayDS_JsonPythonCode(data);
@@ -127,7 +127,7 @@ public class ArrayPageEvents extends BaseTest{
 
 	}
 
-	 */
+
 
 	@AfterMethod()
 	public void backtoArray(){

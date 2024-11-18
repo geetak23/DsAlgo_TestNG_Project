@@ -8,6 +8,7 @@ import base.BaseTest;
 import pageObjects.DashBoardPage;
 import pageObjects.RegisterPage;
 import utilities.DataProvider_Inputs;
+import utilities.RetryAnalyzer;
 
 public class RegisterPageEvents extends BaseTest 
 {	
@@ -54,7 +55,7 @@ public class RegisterPageEvents extends BaseTest
 		regPage.openRegisterPage();
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8,retryAnalyzer = RetryAnalyzer.class)
 	public void testPageTitle()
 	{
 		System.out.println("chk Register PageTitle");
@@ -62,12 +63,12 @@ public class RegisterPageEvents extends BaseTest
 		Assert.assertEquals(regPage.pageTitle().trim(), stringExpected); 
 	}
 
-	@Test(priority = 9, dataProvider = "getRegistrationExcelData", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority = 9, dataProvider = "getRegistrationExcelData", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testUserRegistration(String username, String password, String confirmPassword, String ExpectedMsg) {	
 		
 		registerUser(username,password,confirmPassword,ExpectedMsg);		
 	}
-	@Test(priority = 9, dataProvider = "getInvalidRegistrationStaticData", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority = 9, dataProvider = "getInvalidRegistrationStaticData", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testUserRegistrationjson(String username, String password, String confirmPassword, String ExpectedMsg) {	
 		System.out.println("Testing registration with Username: " + username + 
 				", Password: " + password + 

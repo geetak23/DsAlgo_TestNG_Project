@@ -14,6 +14,7 @@ import driver.DriverFactory;
 import pageObjects.DashBoardPage;
 import pageObjects.SignInPage;
 import utilities.DataProvider_Inputs;
+import utilities.RetryAnalyzer;
 import utilities.TestDataLoader;
 
 public class DashBoardPageEvents extends BaseTest {
@@ -29,7 +30,7 @@ public class DashBoardPageEvents extends BaseTest {
 		dsDBPage.openDashBoardPage();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,retryAnalyzer = RetryAnalyzer.class)
 	public void chkPageTitle()	
 	{
 		System.out.println("@Test3");
@@ -37,37 +38,37 @@ public class DashBoardPageEvents extends BaseTest {
 		Assert.assertEquals(dsDBPage.getPageTitle(), stringExpected); 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4,retryAnalyzer = RetryAnalyzer.class)
 	public void validateDsAlgoDropdownItems() {		
 		System.out.println("@Test4");
 		int totalItems= dsDBPage.getTotaldropDownOptions();		
 		Assert.assertEquals(totalItems, 6);
 	}
-	@Test(priority = 5)
+	@Test(priority = 5,retryAnalyzer = RetryAnalyzer.class)
 	public void validateDsAlgoButtons() {	
 		System.out.println("@Test5");
 		int totBtns= dsDBPage.getStartBtnList();		
 		Assert.assertEquals(totBtns, 7);
 	}
-	@Test(priority = 6)
+	@Test(priority = 6,retryAnalyzer = RetryAnalyzer.class)
 	public void validateRegister() {	
 		System.out.println("validateRegister");
 		dsDBPage.clickRegisterLink();
 	}
 
-	@Test(priority =7, dataProvider = "dataStructuresProvider", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority =7, dataProvider = "dataStructuresProvider", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testDSwithoutSignIn(Map<String, String> data) {
 		System.out.println("Type: " + data.get("type") + ", Index: " + data.get("index"));		
 		dsDBPage.clickDropdownitem(Integer.parseInt(data.get("index")));	
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8,retryAnalyzer = RetryAnalyzer.class)
 	public void validateSignIn() {	
 		System.out.println("validateSignIn");
 		dsDBPage.clickSignInPage();			
 	}
-	@Test(priority = 9)
+	@Test(priority = 9,retryAnalyzer = RetryAnalyzer.class)
 	public void userSignIn() {
 		System.out.println("userSignIn");
 
@@ -78,7 +79,7 @@ public class DashBoardPageEvents extends BaseTest {
 
 	//Sign In user Test cases	
 
-	@Test(priority =10, dataProvider = "dataStructuresProvider", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority =10, dataProvider = "dataStructuresProvider", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testDataStructures(Map<String, String> data) {
 		System.out.println("Type: " + data.get("type") + ", Index: " + data.get("index"));		
 		dsDBPage.clickDropdownitem(Integer.parseInt(data.get("index")));		

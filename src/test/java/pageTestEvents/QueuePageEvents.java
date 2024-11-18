@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pageObjects.QueuePage;
 import utilities.Excel_DataProvider;
+import utilities.RetryAnalyzer;
 
 public class QueuePageEvents extends BaseTest {
 	WebDriver driver;
@@ -31,21 +32,21 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.openQueuePage();
 		
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void implementationofQueueinPythonTopic() {
 		queuePage.implementationofQueueinPythonTopic();
 		String actualTitle=queuePage.getPageTitle();
 		String expectedTitle="Implementation of Queue in Python";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void implementationusingcollectionsdequeTopic() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		String actualTitle=queuePage.getPageTitle();
 		String expectedTitle="Implementation using collections.deque";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void implementationusingarrayTopic() {
 		queuePage.implementationusingarrayTopic();
 		String actualTitle=queuePage.getPageTitle();
@@ -53,7 +54,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueOperationsTopic() {
 		queuePage.queueOperationsTopic();
 		String actualTitle=queuePage.getPageTitle();
@@ -61,7 +62,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopic1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -71,7 +72,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopic2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -81,7 +82,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopic3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -91,7 +92,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopic4() {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();
@@ -101,7 +102,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void practiceQueTopic1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.practiceQuestion();
@@ -112,7 +113,7 @@ public class QueuePageEvents extends BaseTest {
 		
 		
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopic1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -122,7 +123,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualURL,expectedURL );
 		queuePage.driverBack();
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopic2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -133,7 +134,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopic3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -144,7 +145,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopic4() {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();
@@ -156,7 +157,7 @@ public class QueuePageEvents extends BaseTest {
 		
 	}
 	//@Test(dataProvider="Python Code")
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validCodeT1(String validcode,String invalidcode) {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -168,7 +169,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeT1(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.tryHere();
@@ -178,7 +179,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validCodeT2(String validcode,String invalidcode) {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -190,7 +191,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeT2(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.tryHere();
@@ -200,7 +201,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validCodeT3(String validcode,String invalidcode) {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -212,7 +213,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeT3(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.implementationusingarrayTopic();
 		queuePage.tryHere();
@@ -222,7 +223,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validCodeT4(String validcode,String invalidcode) {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();
@@ -234,7 +235,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeT4(String validcode,String invalidcode) throws InterruptedException {
 		queuePage.queueOperationsTopic();
 		queuePage.tryHere();
@@ -244,7 +245,7 @@ public class QueuePageEvents extends BaseTest {
 		queuePage.driverBack();
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPage() {
 		queuePage.arrayPage();
 		String actualTitle=queuePage.getPageTitle();
@@ -252,7 +253,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.arrayPage();
@@ -261,7 +262,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.arrayPage();
@@ -270,7 +271,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.arrayPage();
@@ -279,7 +280,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.arrayPage();
@@ -288,7 +289,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPage() {
 		queuePage.linkedListPage();
 		String actualTitle=queuePage.getPageTitle();
@@ -296,7 +297,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.linkedListPage();
@@ -305,7 +306,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.linkedListPage();
@@ -314,7 +315,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.linkedListPage();
@@ -323,7 +324,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.linkedListPage();
@@ -333,7 +334,7 @@ public class QueuePageEvents extends BaseTest {
 		
 	}
 	
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void stackPage() {
 		queuePage.stackPage();
 		String actualTitle=queuePage.getPageTitle();
@@ -341,7 +342,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.stackPage();
@@ -350,7 +351,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.stackPage();
@@ -359,7 +360,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.stackPage();
@@ -368,7 +369,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.stackPage();
@@ -378,7 +379,7 @@ public class QueuePageEvents extends BaseTest {
 		
 	}
 	
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueDropPage() {
 		queuePage.queuePageDrop();
 		String actualTitle=queuePage.getPageTitle();
@@ -386,7 +387,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueDropPageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.queuePageDrop();
@@ -395,7 +396,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueDropPageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.queuePageDrop();
@@ -404,7 +405,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueDropPageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.queuePageDrop();
@@ -413,7 +414,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void queueDropPageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.queuePageDrop();
@@ -423,7 +424,7 @@ public class QueuePageEvents extends BaseTest {
 		
 	}
 	
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void treePage() {
 		queuePage.treePage();
 		String actualTitle=queuePage.getPageTitle();
@@ -431,7 +432,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.treePage();
@@ -440,7 +441,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.treePage();
@@ -449,7 +450,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.treePage();
@@ -458,7 +459,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.treePage();
@@ -468,7 +469,7 @@ public class QueuePageEvents extends BaseTest {
 		
 	}
 	
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void graphPage() {
 		queuePage.graphPage();
 		String actualTitle=queuePage.getPageTitle();
@@ -476,7 +477,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void graphPageT1() {
 		queuePage.implementationofQueueinPythonTopic();
 		queuePage.graphPage();
@@ -485,7 +486,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void graphPageT2() {
 		queuePage.implementationusingcollectionsdequeTopic();
 		queuePage.graphPage();
@@ -494,7 +495,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void graphPageT3() {
 		queuePage.implementationusingarrayTopic();
 		queuePage.graphPage();
@@ -503,7 +504,7 @@ public class QueuePageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void graphPageT4() {
 		queuePage.queueOperationsTopic();
 		queuePage.graphPage();

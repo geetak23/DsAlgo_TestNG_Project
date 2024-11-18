@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import driver.DriverFactory;
 import pageObjects.LandingPage;
+import utilities.RetryAnalyzer;
 import utilities.TestDataLoader;
 
 public class LandingPageEvents extends BaseTest {
@@ -24,14 +25,14 @@ public class LandingPageEvents extends BaseTest {
 		System.out.println("before method");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,retryAnalyzer = RetryAnalyzer.class)
 	public void testHomePageTitle() {
 		System.out.println("LandingPageEvents : test1");
 		pageTitle = landingPage.getPageTitle();
 		Assert.assertEquals(pageTitle, "Numpy Ninja", "Page title does not match!");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,retryAnalyzer = RetryAnalyzer.class)
 	public void getStartedBtn() 
 	{		
 		System.out.println("test2");

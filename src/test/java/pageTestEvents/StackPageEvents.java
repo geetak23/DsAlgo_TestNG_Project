@@ -13,6 +13,7 @@ import base.BaseTest;
 
 import pageObjects.StackPage;
 import utilities.Excel_DataProvider;
+import utilities.RetryAnalyzer;
 
 public class StackPageEvents  extends BaseTest {
 	WebDriver driver;
@@ -32,7 +33,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.openStackPage();
 
 	}
-	@Test(dataProvider="Stack Topics")
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void topicsStack(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 
@@ -42,7 +43,7 @@ public class StackPageEvents  extends BaseTest {
 
 	}
 
-	@Test(dataProvider="Stack Topics")
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopics(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 		stackPage.tryHere();
@@ -52,7 +53,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.driverBack();
 
 	}
-	@Test(dataProvider="Stack Topics")
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopics(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 		stackPage.tryHere();
@@ -65,7 +66,7 @@ public class StackPageEvents  extends BaseTest {
 
 
 	}
-	@Test(dataProvider="Valid code topic no", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="Valid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validcodeTopics(String topicnumber,String validcode) {
 
 		int topicnumber1 = 0; 
@@ -93,7 +94,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.driverBack();
 	}
 	//@Test(dataProvider="invalidcode Topics")
-	@Test(dataProvider="Invalid code topic no", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="Invalid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidTopics(String topicnumber,String invalidcode) {
 		int topicnumber1 = 0; 
 		if (topicnumber.contains("0")){

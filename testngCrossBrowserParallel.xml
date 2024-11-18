@@ -4,8 +4,9 @@
 <suite thread-count="3" parallel="tests" name="Suite_Parallel">
 	
 	<listeners>
-		<listener class-name="report.ExtentReportListener" />
-		<listener class-name="utilities.RetryListener" />
+	<listener class-name="utilities.RetryListener" />
+		<listener class-name="report.ExtentReportListener" />		
+		<listener class-name="report.AllureRetryListener"/>
 	</listeners>
 		
   <test  name="Test Parallel Home and Dashboard modules.Browser:Chrome">

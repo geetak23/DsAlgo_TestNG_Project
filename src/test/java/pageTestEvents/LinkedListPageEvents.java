@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 
 import pageObjects.LinkedListPage;
+import utilities.RetryAnalyzer;
 
 public class LinkedListPageEvents extends BaseTest {
 	WebDriver driver;
@@ -31,7 +32,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.openLinkedListPage();
 
 	}
-	@Test(dataProvider="LinkedList Topics")
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void topicsLinkedList(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 
@@ -40,7 +41,7 @@ public class LinkedListPageEvents extends BaseTest {
 		Assert.assertEquals(ActualOutput, Expected);
 
 	}
-	@Test(dataProvider="LinkedList Topics")
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopics(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -50,7 +51,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.driverBack();
 
 	}
-	@Test(dataProvider="LinkedList Topics")
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopics(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -63,7 +64,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test(dataProvider="validcode Topics")
+	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void validcodeTopics(int topicnumber,String validcode) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -74,7 +75,7 @@ public class LinkedListPageEvents extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		linkedlistPage.driverBack();
 	}
-	@Test(dataProvider="invalidcode Topics")
+	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void invalidTopics(int topicnumber, String invalidcode) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -83,7 +84,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.explicitWaitAlert();
 		linkedlistPage.driverBack();
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPage(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.arrayPage();
@@ -93,7 +94,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageDropdn(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.linkedListPageDrop();
@@ -103,7 +104,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void stackPage(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.stackPage();
@@ -113,7 +114,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void queuePage(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.queuePage();
@@ -123,7 +124,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void treePage(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.treePage();
@@ -133,7 +134,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test (dataProvider="LinkedList Topics")
+	@Test (dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void graphPage(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.graphPage();

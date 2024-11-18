@@ -24,6 +24,7 @@ import io.cucumber.messages.types.Duration;
 import pageObjects.GraphPage;
 import pageObjects.SignInPage;
 import utilities.Excel_DataProvider;
+import utilities.RetryAnalyzer;
 
 public class GraphPageEvents extends BaseTest {
 
@@ -48,7 +49,7 @@ public class GraphPageEvents extends BaseTest {
 	public void graphPage(){
 		graphPage.openGraphPage();
 	}
-	@Test (priority=1)
+	@Test (priority=1,retryAnalyzer = RetryAnalyzer.class)
 	public void graphTopic() {
 		graphPage.graphTopic();
 		String actualTitle=graphPage.getPageTitle();
@@ -58,7 +59,7 @@ public class GraphPageEvents extends BaseTest {
 
 		System.out.println(actualTitle);
 	}
-	@Test (priority=2)
+	@Test (priority=2,retryAnalyzer = RetryAnalyzer.class)
 	public void graphRepresentationTopic() {
 		graphPage.graphRepresentation();
 		String actualTitle=graphPage.getPageTitle();
@@ -66,7 +67,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle,expectedTitle );
 		System.out.println(actualTitle);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereGraph() {
 		graphPage.graphTopic();
 		graphPage.tryHere();
@@ -75,7 +76,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualURL,expectedURL );
 		graphPage.driverBack();
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereGraphRepresentation() {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -85,7 +86,7 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.driverBack();
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeGraph() {
 		graphPage.graphTopic();
 		graphPage.tryHere();
@@ -95,7 +96,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualURL,expectedURL );
 		graphPage.driverBack();
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeGraphRepresentation() {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -105,7 +106,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualURL,expectedURL );
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 
 	public void validCodeGraph(String validcode,String invalidcode) {
 		graphPage.graphTopic();
@@ -118,7 +119,7 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.driverBack();
 	}
 	//@Test(dataProvider="Python Code")
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void validCodeGraphRep(String validcode,String invalidcode) {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -129,7 +130,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		graphPage.driverBack();
 	}
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeGraph(String validcode,String invalidcode) throws InterruptedException {
 		graphPage.graphTopic();
 		graphPage.tryHere();
@@ -144,7 +145,7 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.driverBack();
 	}
 	//@Test(dataProvider="Python Code")
-	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class)
+	@Test(dataProvider="codeDp", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
 	public void invalidCodeGraphRep(String validcode,String invalidcode) throws InterruptedException {
 		graphPage.graphRepresentation();
 		graphPage.tryHere();
@@ -158,7 +159,7 @@ public class GraphPageEvents extends BaseTest {
 		graphPage.alerAccept();
 		graphPage.driverBack();
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void practiceQueT1() {
 		graphPage.graphTopic();
 		graphPage.practiceQuestion();
@@ -169,7 +170,7 @@ public class GraphPageEvents extends BaseTest {
 
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void practiceQueT2() {
 		graphPage.graphRepresentation();
 		graphPage.practiceQuestion();
@@ -183,7 +184,7 @@ public class GraphPageEvents extends BaseTest {
 
 
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPage() {
 		graphPage.arrayPage();
 		String actualTitle=graphPage.getPageTitle();
@@ -191,7 +192,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT1() {
 		graphPage.graphTopic();
 		graphPage.arrayPage();
@@ -200,7 +201,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test 
+	@Test (retryAnalyzer = RetryAnalyzer.class)
 	public void arrayPageT2() {
 		graphPage.graphRepresentation();
 		graphPage.arrayPage();
@@ -210,14 +211,14 @@ public class GraphPageEvents extends BaseTest {
 
 	}
 
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPage() {
 		graphPage.linkedListPage();
 		String actualTitle=graphPage.getPageTitle();
 		String expectedTitle="Linked List";
 		Assert.assertEquals(actualTitle, expectedTitle);	
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT1() {
 		graphPage.graphTopic();
 		graphPage.linkedListPage();
@@ -225,7 +226,7 @@ public class GraphPageEvents extends BaseTest {
 		String expectedTitle="Linked List";
 		Assert.assertEquals(actualTitle, expectedTitle);	
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void linkedListPageT2() {
 		graphPage.graphRepresentation();
 		graphPage.linkedListPage();
@@ -233,7 +234,7 @@ public class GraphPageEvents extends BaseTest {
 		String expectedTitle="Linked List";
 		Assert.assertEquals(actualTitle, expectedTitle);	
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void stackPage() {
 		graphPage.stackPage();
 		String actualTitle=graphPage.getPageTitle();
@@ -241,7 +242,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT1() {
 		graphPage.graphTopic();
 		graphPage.stackPage();
@@ -250,7 +251,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void stackPageT2() {
 		graphPage.graphRepresentation();
 		graphPage.stackPage();
@@ -260,7 +261,7 @@ public class GraphPageEvents extends BaseTest {
 
 	}
 
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void queuePage() {
 		graphPage.queuePage();
 		String actualTitle=graphPage.getPageTitle();
@@ -268,7 +269,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void queuePageT1() {
 		graphPage.graphTopic();
 		graphPage.queuePage();
@@ -277,7 +278,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void queuePageT2() {
 		graphPage.graphRepresentation();
 		graphPage.queuePage();
@@ -286,7 +287,7 @@ public class GraphPageEvents extends BaseTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void treePage() {
 		graphPage.treePage();
 		String actualTitle=graphPage.getPageTitle();
@@ -295,7 +296,7 @@ public class GraphPageEvents extends BaseTest {
 
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT1() {
 		graphPage.graphTopic();
 		graphPage.treePage();
@@ -305,7 +306,7 @@ public class GraphPageEvents extends BaseTest {
 
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void treePageT2() {
 		graphPage.graphRepresentation();
 		graphPage.treePage();
@@ -315,14 +316,14 @@ public class GraphPageEvents extends BaseTest {
 
 
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void graphDdropDown() {
 		graphPage.graphPageDrop();
 		String actualTitle=graphPage.getPageTitle();
 		String expectedTitle="Graph";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void graphDdropDownT1() {
 		graphPage.graphTopic();
 		graphPage.graphPageDrop();
@@ -330,7 +331,7 @@ public class GraphPageEvents extends BaseTest {
 		String expectedTitle="Graph";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void graphDdropDownT2() {
 		graphPage.graphRepresentation();
 		graphPage.graphPageDrop();

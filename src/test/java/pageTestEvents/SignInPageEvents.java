@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pageObjects.*;
 import utilities.DataProvider_Inputs;
+import utilities.RetryAnalyzer;
 
 public class SignInPageEvents extends BaseTest{
 	SignInPage signIn;
@@ -17,14 +18,14 @@ public class SignInPageEvents extends BaseTest{
 		signIn.openSignInPage();
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10,retryAnalyzer = RetryAnalyzer.class)
 	public void testPageTitle()
 	{
 		String stringExpected = "Login";
 		System.out.println("chk SignIn PageTitle: " + signIn.getSignInPageTitle().trim() +" and checked with : "+ stringExpected );	
 		Assert.assertEquals(signIn.getSignInPageTitle().trim(), stringExpected); 
 	}
-	@Test(priority = 11, dataProvider = "getSignInInvalidData", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority = 11, dataProvider = "getSignInInvalidData", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testSignInInvalidData(String username, String password, String ExpectedMsg) {	
 		System.out.println("invalid data");
 		signIn.signinpage(username,password);
@@ -38,7 +39,7 @@ public class SignInPageEvents extends BaseTest{
 		}
 	}
 
-	@Test(priority = 12, dataProvider = "getSignInValidData", dataProviderClass = DataProvider_Inputs.class)
+	@Test(priority = 12, dataProvider = "getSignInValidData", dataProviderClass = DataProvider_Inputs.class,retryAnalyzer = RetryAnalyzer.class)
 	public void testSignInData(String username, String password, String ExpectedMsg) {	
 		System.out.println("valid data");
 		signIn.signinpage(username,password);	

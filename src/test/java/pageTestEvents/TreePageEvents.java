@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pageObjects.TreePage;
+import utilities.RetryAnalyzer;
 
 public class TreePageEvents extends BaseTest{
 	WebDriver driver;
@@ -30,7 +31,7 @@ public class TreePageEvents extends BaseTest{
 		treePage.openTreePage();
 		
 	}
-	@Test(dataProvider="Tree Topics")
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void topicsTree(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		
@@ -40,7 +41,7 @@ public class TreePageEvents extends BaseTest{
 			
 	}
 	
-	@Test(dataProvider="Tree Topics")
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void tryHereTopics(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -50,7 +51,7 @@ public class TreePageEvents extends BaseTest{
 		treePage.driverBack();
 		
 	}
-	@Test(dataProvider="Tree Topics")
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void nocodeTopics(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -63,7 +64,7 @@ public class TreePageEvents extends BaseTest{
 		
 		
 	}
-	@Test(dataProvider="validcode Topics")
+	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void validcodeTopics(int topicnumber,String validcode) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -74,7 +75,7 @@ public class TreePageEvents extends BaseTest{
 		Assert.assertEquals(actualOutput, expectedoutput);
 		treePage.driverBack();
 	}
-	@Test(dataProvider="invalidcode Topics")
+	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class)
 	public void invalidTopics(int topicnumber, String invalidcode) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();

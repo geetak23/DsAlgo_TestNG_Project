@@ -4,11 +4,12 @@
 <suite name="Suite_Seq">
 	
     <listeners>
-		<listener class-name="report.ExtentReportListener" />
-		<listener class-name="utilities.RetryListener" />
+	<listener class-name="utilities.RetryListener" />
+		<listener class-name="report.ExtentReportListener" />		
+		<listener class-name="report.AllureRetryListener"/>
 	</listeners>
 		
-  <test  name="Test Parallel Home and Dashboard modules.Browser:Chrome">
+  <test  name="Test Browser:Chrome">
 	  <parameter name="browser" value="chrome"></parameter>
     <classes>
 	  <class name="base.BaseTest"/>      
