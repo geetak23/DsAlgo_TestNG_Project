@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite_Seq">
+<suite name="Suite_DsAlgo_TestNg">
 	
     <listeners>
-	<listener class-name="utilities.RetryListener" />
+		<listener class-name="utilities.RetryListener" />
 		<listener class-name="report.ExtentReportListener" />		
 		<listener class-name="report.AllureRetryListener"/>
 	</listeners>
 		
-  <test  name="Test Browser:Chrome">
+  <test name="Test DsAlgo Browser:Chrome">
 	  <parameter name="browser" value="chrome"></parameter>
     <classes>
 	  <class name="base.BaseTest"/>      

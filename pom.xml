@@ -116,16 +116,16 @@
 			<version>3.0.0-M9</version>				 
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>testng.xml</suiteXmlFile>
+					<suiteXmlFile>testngSeq.xml</suiteXmlFile>
 				</suiteXmlFiles>
-				<properties>
+				<!--<properties>
 					<propety>								
 						<value>3</value>
 							<parallel>classes</parallel>
                     		<threadCount>3</threadCount>
 					</propety>
-				</properties>                
-	        </configuration> 	 
+				</properties>     	 -->           
+	        </configuration> 
 		</plugin>
 	</plugins>
 </build>
