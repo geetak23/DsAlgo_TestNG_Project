@@ -22,7 +22,8 @@
       <class name="pageTestEvents.StackPageEvents"/>  
       <class name="pageTestEvents.QueuePageEvents"/>
       <class name="pageTestEvents.TreePageEvents"/>
-      <class name="pageTestEvents.GraphPageEvents"/>     
+      <class name="pageTestEvents.GraphPageEvents"/>  
+         <class name="pageTestEvents.SignOutPageEvents"/>
    	</classes>
   </test>
   

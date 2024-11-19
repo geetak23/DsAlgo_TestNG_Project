@@ -32,7 +32,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.openLinkedListPage();
 
 	}
-	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class,priority=0)
 	public void topicsLinkedList(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 
@@ -41,7 +41,7 @@ public class LinkedListPageEvents extends BaseTest {
 		Assert.assertEquals(ActualOutput, Expected);
 
 	}
-	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class,priority=1)
 	public void tryHereTopics(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -51,7 +51,7 @@ public class LinkedListPageEvents extends BaseTest {
 		linkedlistPage.driverBack();
 
 	}
-	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="LinkedList Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=2)
 	public void nocodeTopics(int topicnumber,String Title) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -64,7 +64,7 @@ public class LinkedListPageEvents extends BaseTest {
 
 
 	}
-	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=3)
 	public void validcodeTopics(int topicnumber,String validcode) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();
@@ -75,7 +75,7 @@ public class LinkedListPageEvents extends BaseTest {
 		Assert.assertEquals(actualOutput, expectedoutput);
 		linkedlistPage.driverBack();
 	}
-	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=4)
 	public void invalidTopics(int topicnumber, String invalidcode) {
 		linkedlistPage.Topic(topicnumber);
 		linkedlistPage.tryHere();

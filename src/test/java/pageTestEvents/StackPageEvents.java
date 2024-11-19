@@ -33,7 +33,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.openStackPage();
 
 	}
-	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class,priority=0)
 	public void topicsStack(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 
@@ -43,7 +43,7 @@ public class StackPageEvents  extends BaseTest {
 
 	}
 
-	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class,priority=1)
 	public void tryHereTopics(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 		stackPage.tryHere();
@@ -53,7 +53,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.driverBack();
 
 	}
-	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Stack Topics",retryAnalyzer = RetryAnalyzer.class,priority=2,dependsOnMethods= {"tryHereTopics"})
 	public void nocodeTopics(int topicnumber,String Title) {
 		stackPage.Topic(topicnumber);
 		stackPage.tryHere();
@@ -66,7 +66,7 @@ public class StackPageEvents  extends BaseTest {
 
 
 	}
-	@Test(dataProvider="Valid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Valid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class,priority=3,dependsOnMethods= {"tryHereTopics"})
 	public void validcodeTopics(String topicnumber,String validcode) {
 
 		int topicnumber1 = 0; 
@@ -94,7 +94,7 @@ public class StackPageEvents  extends BaseTest {
 		stackPage.driverBack();
 	}
 	//@Test(dataProvider="invalidcode Topics")
-	@Test(dataProvider="Invalid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Invalid code topic no", dataProviderClass = Excel_DataProvider.class,retryAnalyzer = RetryAnalyzer.class,priority=4,dependsOnMethods= {"tryHereTopics"})
 	public void invalidTopics(String topicnumber,String invalidcode) {
 		int topicnumber1 = 0; 
 		if (topicnumber.contains("0")){

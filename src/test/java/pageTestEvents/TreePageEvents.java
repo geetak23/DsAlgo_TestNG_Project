@@ -31,7 +31,7 @@ public class TreePageEvents extends BaseTest{
 		treePage.openTreePage();
 		
 	}
-	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class,priority=0)
 	public void topicsTree(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		
@@ -41,7 +41,7 @@ public class TreePageEvents extends BaseTest{
 			
 	}
 	
-	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class,priority=1)
 	public void tryHereTopics(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -51,7 +51,7 @@ public class TreePageEvents extends BaseTest{
 		treePage.driverBack();
 		
 	}
-	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="Tree Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=2)
 	public void nocodeTopics(int topicnumber,String Title) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -64,7 +64,7 @@ public class TreePageEvents extends BaseTest{
 		
 		
 	}
-	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="validcode Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=3)
 	public void validcodeTopics(int topicnumber,String validcode) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
@@ -75,7 +75,7 @@ public class TreePageEvents extends BaseTest{
 		Assert.assertEquals(actualOutput, expectedoutput);
 		treePage.driverBack();
 	}
-	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class)
+	@Test(dataProvider="invalidcode Topics",retryAnalyzer = RetryAnalyzer.class,dependsOnMethods= {"tryHereTopics"},priority=4)
 	public void invalidTopics(int topicnumber, String invalidcode) {
 		treePage.Topic(topicnumber);
 		treePage.tryHere();
