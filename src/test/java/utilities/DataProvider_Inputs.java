@@ -143,4 +143,23 @@ public class DataProvider_Inputs {
 		String sheetName = "ArrayTopicCode";
 		return Xls_Reader.getExcelData(filePath, sheetName);
 	}
+	
+	@DataProvider(name="topicsDS")
+	public Object[][] topicsDS() {
+		return new Object[][] {
+			{0,"Time Complexity"}			
+		};		
+	}
+	@DataProvider(name = "topicsDSValidExcelCode")
+	protected static Object[][] topicsDSValidExcelCode()
+	{
+		String sheetName = "DsTimeComplexityValid";
+		return Xls_Reader.getExcelData(filePath, sheetName);
+	}
+	@DataProvider(name = "topicsDSInvalidExcelCode")
+	protected static Object[][] topicsDSInvalidExcelCode()
+	{
+		String sheetName = "DsTimeComplexityInvalid";
+		return Xls_Reader.getExcelData(filePath, sheetName);
+	}
 }
