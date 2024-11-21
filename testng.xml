@@ -1,76 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite thread-count="3" parallel="tests" name="Suite_Parallel">
+<suite thread-count="3" parallel="tests" name="Suite Parallel">
 	
-	<listeners>
+	  <listeners>
 		<listener class-name="utilities.RetryListener" />
 		<listener class-name="report.ExtentReportListener" />		
 		<listener class-name="report.AllureRetryListener"/>
 	</listeners>
-		
-  <test  name="Test Parallel Home and Dashboard modules.Browser:Chrome">
-	  <parameter name="browser" value="chrome"></parameter>
+	
+  <test thread-count="3" parallel="tests" name="Test Parallel:SignOut">
+	    <parameter name="browser" value="chrome"></parameter>
     <classes>
-	  <class name="base.BaseTest"/>      
-      <class name="pageTestEvents.LandingPageEvents"/>   
-      <class name="pageTestEvents.DashBoardPageEvents"/>  
+      <class name="base.BaseTest"/>	
+		 <class name="pageTestEvents.SignOutPageEvents"/>
 	</classes>
-  </test> <!-- Test_Parallel --> 
-  <test  name="Test Parallel SignIn and Register modules.Browser:chrome ">
-	  <parameter name="browser" value="chrome"></parameter>
-    <classes>
-		<class name="base.BaseTest"/>
-      <class name="pageTestEvents.SignInPageEvents"/>     
-      <class name="pageTestEvents.RegisterPageEvents"/> 
-      
-    </classes>
-  </test> <!-- Test_Parallel -->
+  </test> <!-- Test -->
   
-   <test name="Test Parallel Array module.Browser:chrome">
-	   <parameter name="browser" value="chrome"></parameter>
+  <test thread-count="3" parallel="tests" name="Test Parallel:Tree">
+    <parameter name="browser" value="chrome"></parameter>
     <classes>     
-      <class name="base.BaseTest"/>  
-         <class name="pageTestEvents.ArrayPageEvents"/> 
-       </classes>
-  </test>   
- <test name="Test Parallel LinkedList module.Browser:chrome">
-	   <parameter name="browser" value="chrome"></parameter>
-    	<classes>     
-     	 	<class name="base.BaseTest"/>  
-      		<class name="pageTestEvents.LinkedListPageEvents"/>     
-   		</classes>
-  </test>
+      	<class name="pageTestEvents.TreePageEvents"/>
+    </classes>
+  </test> <!-- Test -->
   
-  <test name="Test Parallel Stack module.Browser:chrome">
-	   <parameter name="browser" value="chrome"></parameter>
-    	<classes>     
-     	 	<class name="base.BaseTest"/>  
-      		<class name="pageTestEvents.StackPageEvents"/>     
-   		</classes>
-  </test>
+  <test thread-count="3" parallel="tests" name="Test Parallel:Register">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>     
+      	  <class name="pageTestEvents.RegisterPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
   
- <test name="Test Parallel Queue module.Browser:chrome">
-	   <parameter name="browser" value="chrome"></parameter>
-    	<classes>     
-     	 	<class name="base.BaseTest"/>  
-      		<class name="pageTestEvents.QueuePageEvents"/>     
-   		</classes>
-  </test>
+   <test thread-count="3" parallel="tests" name="Test Parallel:Landing">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>     
+      	  <class name="pageTestEvents.LandingPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+    
+  <test thread-count="3" parallel="tests" name="Test Parallel:LinkedList">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>     
+      	  <class name="pageTestEvents.LinkedListPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
   
-     <test name="Test Parallel Tree module.Browser:chrome">
-	   <parameter name="browser" value="chrome"></parameter>
-    	<classes>     
-     	 	<class name="base.BaseTest"/>  
-      		<class name="pageTestEvents.TreePageEvents"/>     
-   		</classes>
-  </test>
-     <test name="Test Parallel Graph module.Browser:Chrome">
-	   <parameter name="browser" value="chrome"></parameter>
-    	<classes>     
-     	 	<class name="base.BaseTest"/>  
-      		<class name="pageTestEvents.GraphPageEvents"/>     
-   		</classes>
-  </test>
+  <test thread-count="3" parallel="tests" name="Test Parallel:SignIn">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>     
+      	  <class name="pageTestEvents.SignInPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
   
-</suite> <!-- Suite_Parallel -->
+  <test thread-count="3" parallel="tests" name="Test Parallel:Stack">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+      <class name="pageTestEvents.StackPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="3" parallel="tests" name="Test Parallel:DataStructures">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+     <class name="pageTestEvents.DatastructuresPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="3" parallel="tests" name="Test Parallel:Dash Board">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+      <class name="pageTestEvents.DashBoardPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+      
+  <test thread-count="3" parallel="tests" name="Test Parallel:Queue">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+       <class name="pageTestEvents.QueuePageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="3" parallel="tests" name="Test Parallel:Array">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+         <class name="pageTestEvents.ArrayPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+     
+  <test thread-count="3" parallel="tests" name="Test Parallel:Graph">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>           	 
+          <class name="pageTestEvents.GraphPageEvents"/>
+    </classes>
+  </test> <!-- Test -->
+    
+</suite>

@@ -17,6 +17,7 @@
       <class name="pageTestEvents.DashBoardPageEvents"/>		
       <class name="pageTestEvents.SignInPageEvents"/>     
       <class name="pageTestEvents.RegisterPageEvents"/>   
+      <class name="pageTestEvents.DatastructuresPageEvents"/>
       <class name="pageTestEvents.ArrayPageEvents"/> 
       <class name="pageTestEvents.LinkedListPageEvents"/>  
       <class name="pageTestEvents.StackPageEvents"/>  
